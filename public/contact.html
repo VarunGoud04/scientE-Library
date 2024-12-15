@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us | Scient E-Library</title>
+    <link rel="icon" type="image/png" href="logo11.jpg">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f6f8;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #002f6c;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        header p {
+            font-size: 20px;
+            margin-top: 10px;
+            font-weight: 400;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #004a94;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: white;
+            font-size: 16px;
+            padding: 12px 25px;
+            text-decoration: none;
+            margin: 0 15px;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            background-color: #003366;
+            border-radius: 4px;
+        }
+
+        /* Contact Form Section */
+        .contact-form-section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .contact-form-section h2 {
+            font-size: 36px;
+            color: #002f6c;
+            margin-bottom: 20px;
+        }
+
+        .contact-form-section p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .contact-form button {
+            background-color: #002f6c;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #003366;
+        }
+
+        /* Contact Information Section */
+        .contact-info-section {
+            padding: 50px 20px;
+            background-color: #f2f5f6;
+        }
+
+        .contact-info-section h3 {
+            font-size: 28px;
+            color: #002f6c;
+            margin-bottom: 20px;
+        }
+
+        .contact-info-section p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .contact-info-section .contact-details {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .contact-info-section .contact-details div {
+            text-align: center;
+        }
+
+        .contact-info-section .contact-details i {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: #002f6c;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #7cb0e4; /* Dark background for footer */
+            padding: 20px;
+            text-align: center;
+        }
+
+        .social-media a {
+            margin: 0 10px; /* Space between icons */
+            font-size: 24px; /* Size of icons */
+            text-decoration: none; /* Remove underline from links */
+        }
+
+        .fab.fa-facebook {
+            color: #1877f2; /* Facebook Blue */
+        }
+
+        .fab.fa-twitter {
+            color: #1da1f2; /* Twitter Blue */
+        }
+
+        .fab.fa-instagram {
+            color: #e1306c; /* Instagram Pinkish */
+        }
+
+        .fab.fa-linkedin {
+            color: #0a66c2; /* LinkedIn Blue */
+        }
+
+        /* Hover effect */
+        .social-media a:hover {
+            opacity: 0.8; /* Slightly transparent on hover */
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .contact-info-section .contact-details {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Contact Us</h1>
+        <p>Get in touch with us for inquiries, support, or feedback.</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="/register">Register</a>
+        <a href="login.html">Login</a>
+        <a href="/contact">Contact</a>
+    </nav>
+
+    <!-- Contact Form Section -->
+    <div class="contact-form-section">
+        <h2>We'd Love to Hear From You</h2>
+        <p>If you have any questions, suggestions, or feedback, feel free to reach out using the form below.</p>
+        
+        <!-- Contact Form -->
+        <form class="contact-form">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <!-- Contact Information Section -->
+    <div class="contact-info-section">
+        <h3>Contact Information</h3>
+        <p>Feel free to reach out to us through any of the following means:</p>
+        
+        <!-- Contact Details -->
+        <div class="contact-details">
+            <div>
+                <i class="fas fa-envelope"></i>
+                <p>Email: <a href="mailto:scient.e.library.info@gmail.com">scient.e.library.info@gmail.com</a></p>
+            </div>
+            <div>
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Location: Scient Institute of Technology Ibrahimptnam,RR Dist ,Telangana 501506</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 Scient E-Library. All rights reserved. | Developed by Varun Goud & Team | Department of CSE (AY 2022-2026)</p>
+        <div>
+            <h5 class="text-xl font-semibold mb-4">FOLLOW US ON</h5>
+            <div class="social-media">
+                <a href="https://www.facebook.com" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/varungoud___21/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Disable Right-Click
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+        });
+    
+        // Disable Double-Click
+        document.addEventListener('dblclick', function(event) {
+            event.preventDefault();
+        });
+    
+        // Disable F12, Ctrl+Shift+I, and Ctrl+U for Inspect Element
+        document.addEventListener('keydown', function(event) {
+            // Check for F12 key or Ctrl+Shift+I or Ctrl+U
+            if ((event.key === 'F12') || 
+                (event.ctrlKey && event.shiftKey && (event.key === 'I')) || 
+                (event.ctrlKey && (event.key === 'U'))) {
+                event.preventDefault();
+            }
+        });
+    </script>
+    
+
+</body>
+
+</html>

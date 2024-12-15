@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Professional Elective-II | Scient E-Library</title>
+    <link rel="icon" type="image/png" href="logo11.jpg">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <style>
+        /* Custom Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        .cta-button {
+            background-color: #002f6c;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #003366;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #e7ecef;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: #ffeb3b;
+        }
+
+        section {
+            padding: 4rem 0;
+        }
+
+        .popup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .popup-content {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            width: 80%;
+            max-width: 500px;
+        }
+
+        .popup button {
+            background-color: #e53e3e;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .popup button:hover {
+            background-color: #c53030;
+        }
+
+        .fab.fa-instagram {
+            color: #e1306c;
+        }
+
+        .social-media a:hover {
+            opacity: 0.8;
+        }
+
+        .fab.fa-facebook {
+            color: #1877f2;
+        }
+
+        .fab.fa-twitter {
+            color: #1da1f2;
+        }
+
+        /* Full-height Section for better page coverage */
+        .full-height {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+        /* Card Styles */
+        .card {
+            background-color: #1e40af;
+            color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Header and Footer styling */
+        header {
+            background-color: #003366;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header a {
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        footer {
+            background-color: #f1f5f9;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: #003366;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Header Section -->
+    <header>
+        <a href="#home">Scient E-Library</a>
+    </header>
+
+    <!-- Home Section with Subject Content -->
+    <section id="home" class="bg-blue-900 text-white full-height">
+        <div>
+            <h1 class="text-5xl font-extrabold">Professional Elective-II Subjects</h1>
+            <p class="text-xl mt-4 max-w-3xl mx-auto">Explore key resources related to **Professional Elective-II subjects**, offered in Computer Science and Engineering (CSE) under JNTUH R22 curriculum. This includes important concepts, previous year exam papers, and reference materials for each subject.</p>
+            
+            <!-- Subject Cards arranged in Grid layout for Columns -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+                <div class="card">
+                    <h2 class="text-2xl font-bold">Advanced Data Structures</h2>
+                    <p class="mt-2">Study advanced data structures like AVL trees, B-trees, graphs, and heaps to improve algorithm efficiency.</p>
+                    <a href="#" onclick="showPopup('Advanced Data Structures')" class="cta-button mt-4">Explore</a>
+                </div>
+
+                <div class="card">
+                    <h2 class="text-2xl font-bold">Artificial Intelligence</h2>
+                    <p class="mt-2">Delve into AI algorithms and techniques used in natural language processing, robotics, and cognitive computing.</p>
+                    <a href="#" onclick="showPopup('Artificial Intelligence')" class="cta-button mt-4">Explore</a>
+                </div>
+
+                <div class="card">
+                    <h2 class="text-2xl font-bold">Big Data Analytics</h2>
+                    <p class="mt-2">Learn techniques for processing and analyzing massive data sets to find patterns and insights in real-time.</p>
+                    <a href="#" onclick="showPopup('Big Data Analytics')" class="cta-button mt-4">Explore</a>
+                </div>
+
+                <div class="card">
+                    <h2 class="text-2xl font-bold">Blockchain Technology</h2>
+                    <p class="mt-2">Discover the principles of blockchain, cryptography, and decentralized applications used in finance and beyond.</p>
+                    <a href="#" onclick="showPopup('Blockchain Technology')" class="cta-button mt-4">Explore</a>
+                </div>
+
+                <div class="card">
+                    <h2 class="text-2xl font-bold">Cloud Computing</h2>
+                    <p class="mt-2">Learn the basics of cloud infrastructure, services, and platforms used to store and manage data over the internet.</p>
+                    <a href="#" onclick="showPopup('Cloud Computing')" class="cta-button mt-4">Explore</a>
+                </div>
+
+                <div class="card">
+                    <h2 class="text-2xl font-bold">Computer Vision</h2>
+                    <p class="mt-2">Learn techniques used to process and analyze visual data from the world to create intelligent systems.</p>
+                    <a href="#" onclick="showPopup('Computer Vision')" class="cta-button mt-4">Explore</a>
+                </div>
+
+                <div class="card">
+                    <h2 class="text-2xl font-bold">Cyber Security</h2>
+                    <p class="mt-2">Understand how to protect systems and networks from cyber threats and attacks using encryption and firewalls.</p>
+                    <a href="#" onclick="showPopup('Cyber Security')" class="cta-button mt-4">Explore</a>
+                </div>
+
+                <div class="card">
+                    <h2 class="text-2xl font-bold">Data Science</h2>
+                    <p class="mt-2">Learn statistical techniques and machine learning algorithms to extract insights from complex data sets.</p>
+                    <a href="#" onclick="showPopup('Data Science')" class="cta-button mt-4">Explore</a>
+                </div>
+
+                <div class="card">
+                    <h2 class="text-2xl font-bold">IoT (Internet of Things)</h2>
+                    <p class="mt-2">Explore the integration of smart devices and sensors into networks to create efficient and automated systems.</p>
+                    <a href="#" onclick="showPopup('IoT (Internet of Things)')" class="cta-button mt-4">Explore</a>
+                </div>
+
+                <div class="card">
+                    <h2 class="text-2xl font-bold">Machine Learning</h2>
+                    <p class="mt-2">Explore the world of machine learning algorithms, supervised/unsupervised learning, and model evaluation.</p>
+                    <a href="#" onclick="showPopup('Machine Learning')" class="cta-button mt-4">Explore</a>
+                </div>
+
+                <div class="card">
+                    <h2 class="text-2xl font-bold">Mobile Computing</h2>
+                    <p class="mt-2">Understand mobile technologies, wireless communication, and mobile application development in this rapidly evolving field.</p>
+                    <a href="#" onclick="showPopup('Mobile Computing')" class="cta-button mt-4">Explore</a>
+                </div>
+
+                <div class="card">
+                    <h2 class="text-2xl font-bold">Natural Language Processing</h2>
+                    <p class="mt-2">Understand how to process and analyze text and speech data to build intelligent systems that understand human languages.</p>
+                    <a href="nlp.html" class="cta-button mt-4">Explore</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popup for Unupdated Subjects -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <p id="popup-message" class="text-xl font-semibold">Subject not yet updated, stay tuned for more!</p>
+            <button onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Follow us on
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+        </p>
+        <p>&copy; 2024 Scient E-Library. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showPopup(subject) {
+            document.getElementById("popup-message").textContent = subject + " is not yet updated, stay tuned for more!";
+            document.getElementById("popup").style.display = "flex";
+        }
+
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+    </script>
+    <script>
+        // Disable Right-Click
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+        });
+    
+        // Disable Double-Click
+        document.addEventListener('dblclick', function(event) {
+            event.preventDefault();
+        });
+    
+        // Disable F12, Ctrl+Shift+I, and Ctrl+U for Inspect Element
+        document.addEventListener('keydown', function(event) {
+            // Check for F12 key or Ctrl+Shift+I or Ctrl+U
+            if ((event.key === 'F12') || 
+                (event.ctrlKey && event.shiftKey && (event.key === 'I')) || 
+                (event.ctrlKey && (event.key === 'U'))) {
+                event.preventDefault();
+            }
+        });
+    </script>
+    
+</body>
+
+</html>

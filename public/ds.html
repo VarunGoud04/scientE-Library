@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Data Structures | Scient E-Library</title>
+    <link rel="icon" type="image/png" href="logo11.jpg">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <style>
+        /* Custom Styles */
+        .navbar a:hover {
+            color: #ffeb3b;
+            transition: color 0.3s ease;
+        }
+
+        footer {
+            background-color: #1a202c;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        footer a {
+            color: #ffeb3b;
+        }
+
+        section {
+            padding: 4rem 0;
+        }
+
+        .cta-button {
+            background-color: #002f6c;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #003366;
+            transform: scale(1.05);
+        }
+
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Full-height Section for better page coverage */
+        .full-height {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+        /* Adjust grid for better display */
+        .grid-cols-custom {
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        }
+
+        /* Popup Styling */
+        .popup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .popup-content {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            width: 80%;
+            max-width: 500px;
+        }
+
+        .popup button {
+            background-color: #e53e3e;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .popup button:hover {
+            background-color: #c53030;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Fixed Navigation Bar -->
+    <nav class="bg-blue-800 text-white py-4 sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-semibold">Scient E-Library</a>
+            <div class="space-x-6 navbar">
+                <a href="#important-concepts" class="hover:text-yellow-400">Important Concepts</a>
+                <a href="#previous-exams" class="hover:text-yellow-400">Previous Year Exams</a>
+                <a href="#reference-materials" class="hover:text-yellow-400">Reference Materials</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="bg-blue-900 text-white full-height">
+        <div>
+            <h1 class="text-5xl font-extrabold">Data Structures</h1>
+            <p class="text-xl mt-4 max-w-3xl mx-auto">Explore key resources related to **Data Structures**, an essential topic for Computer Science and Engineering students. This includes important concepts, previous year exam papers, and reference materials.</p>
+            <a href="#important-concepts" class="cta-button mt-8 inline-block">Start Exploring</a>
+        </div>
+    </section>
+
+    <!-- Important Concepts Section -->
+    <section id="important-concepts" class="bg-gray-50 text-center py-16">
+        <h2 class="text-3xl font-semibold text-blue-900">Important Concepts - Data Structures</h2>
+        <p class="text-lg mt-4 max-w-3xl mx-auto">Here are the key concepts for **Data Structures**, which are crucial for your exam preparation.</p>
+        <div class="grid grid-cols-custom gap-6 mt-12">
+            <!-- Arrays -->
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">Arrays</h3>
+                <ul class="mt-4 text-left">
+                    <li>Linear Arrays</li>
+                    <li>Multi-Dimensional Arrays</li>
+                    <li>Array Operations (Insert, Delete, Search)</li>
+                    <li>Dynamic Arrays</li>
+                </ul>
+            </div>
+            <!-- Linked List -->
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">Linked List</h3>
+                <ul class="mt-4 text-left">
+                    <li>Single Linked List</li>
+                    <li>Double Linked List</li>
+                    <li>Circular Linked List</li>
+                    <li>Operations on Linked List (Insert, Delete, Traverse)</li>
+                </ul>
+            </div>
+            <!-- Stacks -->
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">Stacks</h3>
+                <ul class="mt-4 text-left">
+                    <li>Stack Implementation (Array, Linked List)</li>
+                    <li>Stack Operations (Push, Pop, Peek)</li>
+                    <li>Applications of Stack (Expression Evaluation, Parenthesis Matching)</li>
+                </ul>
+            </div>
+            <!-- Queues -->
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">Queues</h3>
+                <ul class="mt-4 text-left">
+                    <li>Queue Implementation (Array, Linked List)</li>
+                    <li>Queue Operations (Enqueue, Dequeue, Peek)</li>
+                    <li>Circular Queues</li>
+                    <li>Priority Queues</li>
+                </ul>
+            </div>
+            <!-- Trees -->
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">Trees</h3>
+                <ul class="mt-4 text-left">
+                    <li>Binary Trees</li>
+                    <li>Binary Search Trees (BST)</li>
+                    <li>Tree Traversals (In-order, Pre-order, Post-order)</li>
+                    <li>AVL Trees, Red-Black Trees</li>
+                </ul>
+            </div>
+            <!-- Graphs -->
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">Graphs</h3>
+                <ul class="mt-4 text-left">
+                    <li>Graph Representations (Adjacency Matrix, Adjacency List)</li>
+                    <li>Graph Traversal Algorithms (DFS, BFS)</li>
+                    <li>Shortest Path Algorithms (Dijkstra, Bellman-Ford)</li>
+                    <li>Minimum Spanning Tree (Prim's, Kruskal's)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Previous Year Exams Section -->
+    <section id="previous-exams" class="bg-blue-100 text-center py-16">
+        <h2 class="text-3xl font-semibold text-blue-900">Previous Year Exams - Data Structures</h2>
+        <p class="text-lg mt-4 max-w-3xl mx-auto">Here are previous year exam papers for **Data Structures**, helping you to prepare for the exams effectively.</p>
+        <div class="grid grid-cols-custom gap-6 mt-12">
+            <!-- Data Structures Exam Papers -->
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">Data Structures - Previous Year Papers</h3>
+                <p class="mt-4">Download and practice previous year exam papers on Data Structures, including arrays, linked lists, stacks, queues, trees, and graphs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reference Materials Section -->
+    <section id="reference-materials" class="bg-white text-center py-16">
+        <h2 class="text-3xl font-semibold text-blue-900">Reference Materials - Data Structures</h2>
+        <p class="text-lg mt-4 max-w-3xl mx-auto">Download essential reference materials and notes to enhance your understanding of **Data Structures**.</p>
+        <div class="grid grid-cols-custom gap-6 mt-12">
+            <!-- Data Structures Notes -->
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">Data Structures - Key Concepts</h3>
+                <p class="mt-4">Download notes covering the essential concepts of Data Structures, including arrays, linked lists, stacks, queues, trees, and graphs.</p>
+                <a href="#" class="cta-button mt-4" onclick="showPopup(event)">Download Notes</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Scient E-Library. All rights reserved. | Developed by Varun Goud & Team | Department of CSE (AY 2022-2026).</p>
+        <p>Follow us on <a href="#">Facebook</a>, <a href="#">Twitter</a>, and <a href="https://www.instagram.com/Varungoud___21/">Instagram</a></p>
+    </footer>
+
+    <!-- Popup for Maintenance Message -->
+    <div id="popup" class="popup">
+        <div class="popup-content bg-white p-8 rounded-lg shadow-md">
+            <p>This feature is currently under maintenance. Please try again later.</p>
+            <button class="close-btn" onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <script>
+        // Popup Handling
+        function showPopup(event) {
+            event.preventDefault();
+            document.getElementById('popup').style.display = 'flex';
+        }
+
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+    </script>
+    <script>
+        // Disable Right-Click
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+        });
+    
+        // Disable Double-Click
+        document.addEventListener('dblclick', function(event) {
+            event.preventDefault();
+        });
+    
+        // Disable F12, Ctrl+Shift+I, and Ctrl+U for Inspect Element
+        document.addEventListener('keydown', function(event) {
+            // Check for F12 key or Ctrl+Shift+I or Ctrl+U
+            if ((event.key === 'F12') || 
+                (event.ctrlKey && event.shiftKey && (event.key === 'I')) || 
+                (event.ctrlKey && (event.key === 'U'))) {
+                event.preventDefault();
+            }
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Computer Aided Engineering Graphics | Scient E-Library</title>
+    <link rel="icon" type="image/png" href="logo11.jpg">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <style>
+        /* Custom Styles */
+        .navbar a:hover {
+            color: #ffeb3b;
+            transition: color 0.3s ease;
+        }
+
+        footer {
+            background-color: #1a202c;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        footer a {
+            color: #ffeb3b;
+        }
+
+        section {
+            padding: 4rem 0;
+        }
+
+        .cta-button {
+            background-color: #002f6c;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #003366;
+            transform: scale(1.05);
+        }
+
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Pop-up Styling */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .popup .popup-content {
+            font-size: 1.2rem;
+            color: #333;
+            text-align: center;
+        }
+
+        .popup .close-btn {
+            margin-top: 1rem;
+            padding: 8px 16px;
+            background-color: #002f6c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .popup .close-btn:hover {
+            background-color: #003366;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Fixed Navigation Bar -->
+    <nav class="bg-blue-800 text-white py-4 sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-semibold">Scient E-Library</a>
+            <div class="space-x-6 navbar">
+                <a href="#important-concepts" class="hover:text-yellow-400">Important Concepts</a>
+                <a href="#previous-exams" class="hover:text-yellow-400">Previous Year Exams</a>
+                <a href="#reference-materials" class="hover:text-yellow-400">Reference Materials</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="bg-blue-900 text-white text-center py-20">
+        <h1 class="text-5xl font-extrabold">Welcome to Computer Aided Engineering Graphics (CAEG)</h1>
+        <p class="text-xl mt-4 max-w-3xl mx-auto">Explore key resources related to **Computer Aided Engineering Graphics**, a core subject for B.Tech students. This includes important concepts, previous year exam papers, and detailed reference materials.</p>
+        <a href="#important-concepts" class="cta-button mt-8 inline-block">Start Exploring</a>
+    </section>
+
+    <!-- Important Concepts Section -->
+    <section id="important-concepts" class="bg-gray-50 text-center py-16">
+        <h2 class="text-3xl font-semibold text-blue-900">Important Concepts - CAEG</h2>
+        <p class="text-lg mt-4 max-w-3xl mx-auto">Here you'll find a curated list of important concepts for **Computer Aided Engineering Graphics** that will help you excel in your B.Tech exams.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">Basic Drafting Concepts</h3>
+                <ul class="mt-4 text-left">
+                    <li>Introduction to CAD software and its applications.</li>
+                    <li>Drawing of geometric shapes (circle, square, triangle, etc.).</li>
+                    <li>Projection techniques: First and Third Angle Projection.</li>
+                    <li>Orthographic Projections: Top, Front, and Side views.</li>
+                </ul>
+            </div>
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">Sectional Views & Conventions</h3>
+                <ul class="mt-4 text-left">
+                    <li>Understanding sectional views and their importance.</li>
+                    <li>Different types of sectional views: Full, Half, Offset.</li>
+                    <li>Dimensions and tolerances in CAD drawings.</li>
+                    <li>Engineering conventions in technical drawings.</li>
+                </ul>
+            </div>
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">3D Modeling Techniques</h3>
+                <ul class="mt-4 text-left">
+                    <li>Introduction to 3D modeling tools and their uses.</li>
+                    <li>Creating 3D shapes and objects in CAD software.</li>
+                    <li>Application of surface modeling and solid modeling techniques.</li>
+                    <li>Techniques for rendering 3D models with realistic lighting.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Previous Year Exams Section -->
+    <section id="previous-exams" class="bg-blue-100 text-center py-16">
+        <h2 class="text-3xl font-semibold text-blue-900">Previous Year Exams - CAEG</h2>
+        <p class="text-lg mt-4 max-w-3xl mx-auto">Explore previous year exam papers for **Computer Aided Engineering Graphics**. These papers will help you understand the types of questions asked in exams and give you practice material.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">Basic Drafting - Previous Year Papers</h3>
+                <p class="mt-4">Download and practice questions covering basic drafting concepts, geometric shapes, and projections.</p>
+            </div>
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">Sectional Views - Previous Year Papers</h3>
+                <p class="mt-4">Access previous year question papers on sectional views, conventions, and engineering drawings.</p>
+            </div>
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">3D Modeling - Previous Year Papers</h3>
+                <p class="mt-4">Review past papers focused on 3D modeling, CAD tools, and rendering techniques.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reference Materials Section -->
+    <section id="reference-materials" class="bg-white text-center py-16">
+        <h2 class="text-3xl font-semibold text-blue-900">Reference Materials - CAEG</h2>
+        <p class="text-lg mt-4 max-w-3xl mx-auto">Download reference materials that cover essential concepts and techniques in **Computer Aided Engineering Graphics** to help you master CAD software and technical drawing.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">CAD Software Basics</h3>
+                <p class="mt-4">Access detailed notes on the basics of CAD software such as AutoCAD, SolidWorks, and CATIA.</p>
+                <a href="#" class="cta-button mt-4" onclick="showPopup(event)">Download Notes</a>
+            </div>
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">Engineering Drawing Techniques</h3>
+                <p class="mt-4">Download reference materials on technical drawing conventions, dimensions, and projections.</p>
+                <a href="#" class="cta-button mt-4" onclick="showPopup(event)">Download Notes</a>
+            </div>
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">3D Modeling & Visualization</h3>
+                <p class="mt-4">Learn 3D modeling and visualization techniques using advanced CAD tools.</p>
+                <a href="#" class="cta-button mt-4" onclick="showPopup(event)">Download Notes</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p> © 2024 Scient E-Library. All rights reserved. | Developed by Varun Goud & Team | Department of CSE (AY 2022-2026).</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+    </footer>
+
+    <!-- Popup Modal -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <p>Currently under maintenance</p>
+            <button class="close-btn" onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Prevent double clicks and show pop-up for links with href="#"
+        function showPopup(event) {
+            event.preventDefault();  // Prevent default link action
+            document.getElementById("popup").style.display = "block";
+        }
+
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+
+        // Disable inspect element attempt
+        document.oncontextmenu = function() {
+            alert("Right-click is disabled for security purposes.");
+            return false;
+        };
+
+        // Disable F12 and right-click
+        document.onkeydown = function(e) {
+            if (e.keyCode == 123 || (e.ctrlKey && e.shiftKey && e.keyCode == 73)) {
+                alert("Inspect Element is disabled.");
+                return false;
+            }
+        };
+    </script>
+    <script>
+        // Disable Right-Click
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+        });
+    
+        // Disable Double-Click
+        document.addEventListener('dblclick', function(event) {
+            event.preventDefault();
+        });
+    
+        // Disable F12, Ctrl+Shift+I, and Ctrl+U for Inspect Element
+        document.addEventListener('keydown', function(event) {
+            // Check for F12 key or Ctrl+Shift+I or Ctrl+U
+            if ((event.key === 'F12') || 
+                (event.ctrlKey && event.shiftKey && (event.key === 'I')) || 
+                (event.ctrlKey && (event.key === 'U'))) {
+                event.preventDefault();
+            }
+        });
+    </script>
+    
+
+</body>
+
+</html>

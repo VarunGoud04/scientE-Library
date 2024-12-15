@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Scient E-Library | College</title>
+    <link rel="icon" type="image/png" href="logo11.jpg">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
+
+    <style>
+        /* Additional Styles */
+        body {
+            background-color: #f9fafb;
+        }
+
+        .cta-button {
+            background-color: #002f6c;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #003366;
+            transform: scale(1.05);
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 30px; /* Icon size */
+            margin: 0 20px; /* Space between icons */
+            padding: 12px; /* Padding to make the circle clickable */
+            background-color: #333; /* Dark background for contrast */
+            border-radius: 50%; /* Circular icon */
+            transition: transform 0.3s, color 0.3s, background-color 0.3s;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+            background-color: #ff9800; /* Highlight color on hover */
+        }
+
+        .navbar {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .course-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .course-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+    
+            footer {
+              background-color: #e7ecef;  /* Dark background for footer */
+              padding: 20px;
+              text-align: center;
+            }
+        
+            .social-media a {
+              margin: 0 10px;          /* Space between icons */
+              font-size: 24px;         /* Size of icons */
+              text-decoration: none;   /* Remove underline from links */
+            }
+        
+            .fab.fa-facebook {
+              color: #1877f2;          /* Facebook Blue */
+            }
+        
+            .fab.fa-twitter {
+              color: #1da1f2;          /* Twitter Blue */
+            }
+        
+            .fab.fa-instagram {
+              color: #e1306c;          /* Instagram Pinkish */
+            }
+        
+            .fab.fa-linkedin {
+              color: #0a66c2;          /* LinkedIn Blue */
+            }
+        
+            /* Hover effect */
+            .social-media a:hover {
+              opacity: 0.8;            /* Slightly transparent on hover */
+            }
+          
+        
+    </style>
+
+    <script>
+        // Displaying the alert on page load
+        window.onload = function () {
+            alert("Kindly Register & Access the content with login details. No content is shared without login details.");
+        };
+    </script>
+</head>
+
+<body>
+
+    <!-- Fixed Navigation Bar -->
+    <nav class="bg-blue-800 text-white py-4 sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-semibold">Scient E-Library</a>
+            <div class="space-x-6">
+                <a href="index.html" class="hover:text-yellow-400">Home</a>
+                <a href="about.html" class="hover:text-yellow-400">About Us</a>
+                <a href="/register" class="hover:text-yellow-400">Register</a>
+                <a href="login.html" class="hover:text-yellow-400">Login</a>
+                <a href="contact.html" class="hover:text-yellow-400">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-blue-900 text-white py-16 text-center shadow-lg">
+        <h1 class="text-4xl font-extrabold">Scient E-Library</h1>
+        <p class="text-xl mt-4 max-w-3xl mx-auto">Empowering students with limitless knowledge. Explore a world of academic excellence, innovation, and success.</p>
+        <a href="/register" class="cta-button mt-8 inline-block">Join Now and Start Learning</a>
+    </header>
+
+    <!-- Main Content Section -->
+    <section class="my-12 max-w-7xl mx-auto px-4">
+        <!-- Welcome Text -->
+        <div class="text-center">
+            <h2 class="text-3xl font-semibold text-blue-900">Welcome to Scient E-Library</h2>
+            <p class="text-lg mt-4 max-w-3xl mx-auto">Explore cutting-edge technology, timeless literature, and all the academic resources you need for success. Scient E-Library is here to support your educational journey with accessible and diverse materials.</p>
+        </div>
+
+        <!-- About Us Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h5 class="text-xl font-semibold text-blue-900">Our Vision</h5>
+                <p class="mt-4">We aim to be the global leader in providing students with high-quality academic resources, fostering growth, and promoting a lifelong love of learning.</p>
+            </div>
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h5 class="text-xl font-semibold text-blue-900">Our Courses</h5>
+                <p class="mt-4">We offer a wide range of courses across various disciplines including technology, business, humanities, and arts to meet the needs of future leaders.</p>
+            </div>
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h5 class="text-xl font-semibold text-blue-900">Student Resources</h5>
+                <p class="mt-4">Our extensive library of e-books, research papers, and interactive tutorials is designed to enhance your understanding and academic performance.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Courses Section -->
+    <section class="py-12 bg-gray-100">
+        <div class="text-center">
+            <h2 class="text-3xl font-semibold text-blue-900">Featured Courses</h2>
+            <p class="text-lg mt-4 max-w-3xl mx-auto">Browse through our diverse range of online courses, designed to equip you with the knowledge and skills needed for academic and professional success.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+            <div class="course-card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">Advanced Web Development</h3>
+                <p class="mt-4">Learn the latest frameworks and tools to build modern, responsive websites and web applications.</p>
+            </div>
+            <div class="course-card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">Digital Marketing</h3>
+                <p class="mt-4">Master the art of online marketing, SEO, content creation, and social media strategies.</p>
+            </div>
+            <div class="course-card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">Data Science and AI</h3>
+                <p class="mt-4">Dive deep into data analysis, machine learning, and artificial intelligence concepts for real-world applications.</p>
+            </div>
+        </div>
+    </section>
+
+   <!-- Footer Section -->
+<footer class="bg-gray-900 text-white py-12 mt-16">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12">
+            <!-- About Us Section -->
+            <div>
+                <h5 class="text-xl font-semibold mb-4">ABOUT US</h5>
+                <ul>
+                    <li><a href="about.html" class="text-sm hover:text-yellow-400">About Scient E-Library</a></li>
+                    <li><a href="vision-mission.html" class="text-sm hover:text-yellow-400">Vision & Mission</a></li>
+                    <li><a href="team.html" class="text-sm hover:text-yellow-400">Our Team</a></li>
+                    <li><a href="contact.html" class="text-sm hover:text-yellow-400">Contact Us</a></li>
+                    <li><a href="faq.html" class="text-sm hover:text-yellow-400">FAQ</a></li>
+                </ul>
+            </div>
+
+            <!-- Courses & Resources Section -->
+            <div>
+                <h5 class="text-xl font-semibold mb-4">COURSES & RESOURCES</h5>
+                <ul>
+                    <li><a href="#" class="text-sm hover:text-yellow-400" onclick="showAlertAndRedirect()">Browse Courses</a></li>
+                    <li><a href="#" class="text-sm hover:text-yellow-400" onclick="showAlertAndRedirect()">E-Books Library</a></li>
+                    <li><a href="#" class="text-sm hover:text-yellow-400" onclick="showAlertAndRedirect()">Tutorials</a></li>
+                    <li><a href="#" class="text-sm hover:text-yellow-400" onclick="showAlertAndRedirect()">Research Papers</a></li>
+                    <li><a href="#" class="text-sm hover:text-yellow-400" onclick="showAlertAndRedirect()">Webinars</a></li>
+                </ul>
+            </div>
+
+            <!-- Quick Links Section -->
+            <div>
+                <h5 class="text-xl font-semibold mb-4">QUICK LINKS</h5>
+                <ul>
+                    <li><a href="register.html" class="text-sm hover:text-yellow-400">Register</a></li>
+                    <li><a href="login.html" class="text-sm hover:text-yellow-400">Login</a></li>
+                    <li><a href="terms.html" class="text-sm hover:text-yellow-400">Terms of Use</a></li>
+                    <li><a href="privacy.html" class="text-sm hover:text-yellow-400">Privacy Policy</a></li>
+                    <li><a href="contact.html" class="text-sm hover:text-yellow-400">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media Section -->
+            <div>
+                <h5 class="text-xl font-semibold mb-4">FOLLOW US ON</h5>
+                <div class="social-media">
+                    <a href="https://www.facebook.com" target="_blank">
+                      <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/varungoud___21/" target="_blank">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank">
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                  </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom Section -->
+        <div class="text-center mt-12 border-t border-gray-700 pt-6">
+            <p class="text-sm">© 2024 Scient E-Library. All rights reserved. | Developed by Varun Goud & Team | Department of CSE (AY 2022-2026)</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    function showAlertAndRedirect() {
+        alert("Kindly Register & Access the content with login details. No content is shared without login details.");
+        window.location.href = "register.html"; // Redirect to register page
+    }
+</script>
+<script>
+    // Disable Right-Click
+    document.addEventListener('contextmenu', function(event) {
+        event.preventDefault();
+    });
+
+    // Disable Double-Click
+    document.addEventListener('dblclick', function(event) {
+        event.preventDefault();
+    });
+
+    // Disable F12, Ctrl+Shift+I, and Ctrl+U for Inspect Element
+    document.addEventListener('keydown', function(event) {
+        // Check for F12 key or Ctrl+Shift+I or Ctrl+U
+        if ((event.key === 'F12') || 
+            (event.ctrlKey && event.shiftKey && (event.key === 'I')) || 
+            (event.ctrlKey && (event.key === 'U'))) {
+            event.preventDefault();
+        }
+    });
+</script>
+
+
+
+</body>
+
+</html>

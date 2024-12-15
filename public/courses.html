@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Courses - Scient E-Library</title>
+    <link rel="icon" type="image/png" href="logo11.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #002f6c;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        /* Navigation Bar Styling */
+        nav {
+            background-color: #003366;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        nav a {
+            display: inline-block;
+            color: white;
+            padding: 14px 25px;
+            text-decoration: none;
+            margin: 0 15px;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            background-color: #004a94;
+            border-radius: 4px;
+        }
+
+        /* Courses Container */
+        .courses-container {
+            width: 80%;
+            margin: 50px auto;
+        }
+
+        /* Course Section Styling */
+        .course-section {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .course-section h2 {
+            color: #002f6c;
+            margin-bottom: 10px;
+        }
+
+        .course-section h3 {
+            font-size: 20px;
+            color: #003366;
+            margin-top: 20px;
+        }
+
+        .course-section ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .course-section ul li {
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .course-section ul li a {
+            color: #002f6c;
+            text-decoration: none;
+        }
+
+        .course-section ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .courses-container {
+                width: 95%;
+            }
+
+            .course-section h2,
+            .course-section h3 {
+                font-size: 18px;
+            }
+
+            nav a {
+                padding: 10px 20px;
+            }
+        }
+    </style>
+
+    <script>
+        // Function to display the pop-up message when clicking on a link with href="#"
+        function showPopup(event) {
+            event.preventDefault(); // Prevent the default action (scrolling or navigating)
+            alert("Currently under Maintenance. Stay tuned for updates.");
+        }
+
+        
+       
+    </script>
+    <script>
+        // Redirect to login.html if the page is refreshed
+        if (performance.navigation.type === 1) {
+            window.location.href = 'login.html';
+        }
+    </script>
+
+</head>
+
+<body>
+
+    
+
+    <!-- Header Section -->
+    <header>
+        <h1>Scient E-Library - Courses</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Courses Container -->
+    <div class="courses-container">
+        <marquee style="color: blue; font-size: 24px; font-weight: bold;">Don't refresh the page It will rediect to login</marquee>
+
+
+        <!-- CSE Section -->
+        <div class="course-section">
+            <h2>CSE (Computer Science Engineering) - R22 Regulations</h2>
+            <h3>1st Year</h3>
+            <ul>
+                <li><a href="course1-1.html">Semester 1</a></li>
+                <li><a href="course1-2.html">Semester 2</a></li>
+            </ul>
+            <h3>2nd Year</h3>
+            <ul>
+                <li><a href="course2-1.html">Semester 1</a></li>
+                <li><a href="course2-2.html">Semester 2</a></li>
+            </ul>
+            <h3>3rd Year</h3>
+            <ul>
+                <li><a href="course3-1.html">Semester 1</a></li>
+                <li><a href="course3-2.html">Semester 2</a></li>
+            </ul>
+            <h3>4th Year</h3>
+            <ul>
+                <li><a href="course4-1.html">Semester 1</a></li>
+                <li><a href="course4-2.html">Semester 2</a></li>
+            </ul>
+        </div>
+
+        <!-- AI&ML Section -->
+        <div class="course-section">
+            <h2>AI & ML (Artificial Intelligence & Machine Learning) - R22 Regulations</h2>
+            <h3>1st Year</h3>
+            <ul>
+                <li><a href="#" onclick="showPopup(event)">Semester 1</a></li>
+                <li><a href="#" onclick="showPopup(event)">Semester 2</a></li>
+            </ul>
+            <h3>2nd Year</h3>
+            <ul>
+                <li><a href="#" onclick="showPopup(event)">Semester 1</a></li>
+                <li><a href="#" onclick="showPopup(event)">Semester 2</a></li>
+            </ul>
+            <h3>3rd Year</h3>
+            <ul>
+                <li><a href="#" onclick="showPopup(event)">Semester 1</a></li>
+                <li><a href="#" onclick="showPopup(event)">Semester 2</a></li>
+            </ul>
+            <h3>4th Year</h3>
+            <ul>
+                <li><a href="#" onclick="showPopup(event)">Semester 1</a></li>
+                <li><a href="#" onclick="showPopup(event)">Semester 2</a></li>
+            </ul>
+        </div>
+
+        <!-- EEE Section -->
+        <div class="course-section">
+            <h2>EEE (Electrical and Electronics Engineering) - R22 Regulations</h2>
+            <h3>1st Year</h3>
+            <ul>
+                <li><a href="#" onclick="showPopup(event)">Semester 1</a></li>
+                <li><a href="#" onclick="showPopup(event)">Semester 2</a></li>
+            </ul>
+            <h3>2nd Year</h3>
+            <ul>
+                <li><a href="#" onclick="showPopup(event)">Semester 1</a></li>
+                <li><a href="#" onclick="showPopup(event)">Semester 2</a></li>
+            </ul>
+            <h3>3rd Year</h3>
+            <ul>
+                <li><a href="#" onclick="showPopup(event)">Semester 1</a></li>
+                <li><a href="#" onclick="showPopup(event)">Semester 2</a></li>
+            </ul>
+            <h3>4th Year</h3>
+            <ul>
+                <li><a href="#" onclick="showPopup(event)">Semester 1</a></li>
+                <li><a href="#" onclick="showPopup(event)">Semester 2</a></li>
+            </ul>
+        </div>
+
+        <!-- CSD Section -->
+        <div class="course-section">
+            <h2>CSD (Computer Science and Data Science) - R22 Regulations</h2>
+            <h3>1st Year</h3>
+            <ul>
+                <li><a href="#" onclick="showPopup(event)">Semester 1</a></li>
+                <li><a href="#" onclick="showPopup(event)">Semester 2</a></li>
+            </ul>
+            <h3>2nd Year</h3>
+            <ul>
+                <li><a href="#" onclick="showPopup(event)">Semester 1</a></li>
+                <li><a href="#" onclick="showPopup(event)">Semester 2</a></li>
+            </ul>
+            <h3>3rd Year</h3>
+            <ul>
+                <li><a href="#" onclick="showPopup(event)">Semester 1</a></li>
+                <li><a href="#" onclick="showPopup(event)">Semester 2</a></li>
+            </ul>
+            <h3>4th Year</h3>
+            <ul>
+                <li><a href="#" onclick="showPopup(event)">Semester 1</a></li>
+                <li><a href="#" onclick="showPopup(event)">Semester 2</a></li>
+            </ul>
+        </div>
+
+        <!-- ECE Section -->
+        <div class="course-section">
+            <h2>ECE (Electronics and Communication Engineering) - R22 Regulations</h2>
+            <h3>1st Year</h3>
+            <ul>
+                <li><a href="#" onclick="showPopup(event)">Semester 1</a></li>
+                <li><a href="#" onclick="showPopup(event)">Semester 2</a></li>
+            </ul>
+            <h3>2nd Year</h3>
+            <ul>
+                <li><a href="#" onclick="showPopup(event)">Semester 1</a></li>
+                <li><a href="#" onclick="showPopup(event)">Semester 2</a></li>
+            </ul>
+            <h3>3rd Year</h3>
+            <ul>
+                <li><a href="#" onclick="showPopup(event)">Semester 1</a></li>
+                <li><a href="#" onclick="showPopup(event)">Semester 2</a></li>
+            </ul>
+            <h3>4th Year</h3>
+            <ul>
+                <li><a href="#" onclick="showPopup(event)">Semester 1</a></li>
+                <li><a href="#" onclick="showPopup(event)">Semester 2</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 Scient E-Library. All rights reserved. | Developed by Varun Goud & Team | Department of CSE (AY 2022-2026).</p>
+        <div class="social-icons">
+            <!-- Instagram Link -->
+            <a href="https://www.instagram.com/Varungoud___21/" title="Follow us on Instagram">
+                <i class="fab fa-instagram"></i> Follow us on Instagram
+            </a>
+        </div>
+    </footer>
+    <script>
+        // Disable Right-Click
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+        });
+    
+        // Disable Double-Click
+        document.addEventListener('dblclick', function(event) {
+            event.preventDefault();
+        });
+    
+        // Disable F12, Ctrl+Shift+I, and Ctrl+U for Inspect Element
+        document.addEventListener('keydown', function(event) {
+            // Check for F12 key or Ctrl+Shift+I or Ctrl+U
+            if ((event.key === 'F12') || 
+                (event.ctrlKey && event.shiftKey && (event.key === 'I')) || 
+                (event.ctrlKey && (event.key === 'U'))) {
+                event.preventDefault();
+            }
+        });
+    </script>
+    
+
+</body>
+
+</html>

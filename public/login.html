@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login - Scient E-Library</title>
+    <link rel="icon" type="image/png" href="logo11.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #002f6c;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #003366;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        nav a {
+            display: inline-block;
+            color: white;
+            padding: 14px 25px;
+            text-decoration: none;
+            margin: 0 15px;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            background-color: #004a94;
+            border-radius: 4px;
+        }
+
+        /* Login Form Container */
+        .form-container {
+            width: 40%;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #002f6c;
+        }
+
+        .form-container label {
+            font-size: 16px;
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .form-container input[type="email"],
+        .form-container input[type="password"],
+        .form-container select {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-container button {
+            width: 100%;
+            padding: 15px;
+            background-color: #002f6c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .form-container button:hover {
+            background-color: #004a94;
+        }
+
+        .form-container p {
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .form-container p a {
+            color: #002f6c;
+            text-decoration: none;
+        }
+
+        .form-container p a:hover {
+            text-decoration: underline;
+        }
+
+        /* Error Message Styling */
+        .error-message {
+            color: red;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #7cb0e4;  /* Dark background for footer */
+            padding: 20px;
+            text-align: center;
+          }
+      
+          .social-media a {
+            margin: 0 10px;          /* Space between icons */
+            font-size: 24px;         /* Size of icons */
+            text-decoration: none;   /* Remove underline from links */
+          }
+      
+          .fab.fa-facebook {
+            color: #1877f2;          /* Facebook Blue */
+          }
+      
+          .fab.fa-twitter {
+            color: #1da1f2;          /* Twitter Blue */
+          }
+      
+          .fab.fa-instagram {
+            color: #e1306c;          /* Instagram Pinkish */
+          }
+      
+          .fab.fa-linkedin {
+            color: #0a66c2;          /* LinkedIn Blue */
+          }
+      
+          /* Hover effect */
+          .social-media a:hover {
+            opacity: 0.8;            /* Slightly transparent on hover */
+          }
+        
+      
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .form-container {
+                width: 80%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Scient E-Library - Login</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="register.html">Register</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Login Form -->
+    <div class="form-container">
+        <h2>Login</h2>
+
+        <!-- Display error message -->
+        <div class="error-message" id="error-message">
+            <p id="message"></p>
+        </div>
+
+        <form action="/login" method="POST">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+        
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required placeholder="Enter your password">
+        
+            <label for="regulations">Regulations</label>
+            <select id="regulations" name="regulation" required onchange="checkRegulation()">
+                <option value="choose">Choose Regulation</option>
+                <option value="R18" id="R18Option">R18</option>
+                <option value="R22">R22</option>
+            </select>
+        
+            <button type="submit">Login</button>
+        </form>
+
+        <p>Don't have an account? <a href="/register">Register here</a></p>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+       
+            <h5 class="text-xl font-semibold mb-4">FOLLOW US ON</h5>
+            <div class="social-media">
+                <a href="https://www.facebook.com" target="_blank">
+                  <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/varungoud___21/" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </div>
+              <p>Developed by Varun Goud & Team| Department of CSE (AY 2022-2026) | All rights reserved</p>
+              <div>
+    </footer>
+
+    <!-- JavaScript for Regulation Change -->
+    <script>
+        // Function to show a pop-up, disable R18 option and revert selection
+        function checkRegulation() {
+            var selectedRegulation = document.getElementById('regulations').value;
+            
+            if (selectedRegulation === 'R18') {
+                // Show the pop-up message
+                alert("We are currently not accepting R18 Regulations... Stay tuned for updates.");
+                
+                // Disable the "R18" option to prevent it from being selected again
+                var r18Option = document.getElementById('R18Option');
+                r18Option.disabled = true;
+                
+                // Revert selection to "Choose Regulation"
+                document.getElementById('regulations').value = 'choose';
+            }
+        }
+    </script>
+    <script>
+        // Disable Right-Click
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+        });
+    
+        // Disable Double-Click
+        document.addEventListener('dblclick', function(event) {
+            event.preventDefault();
+        });
+    
+        // Disable F12, Ctrl+Shift+I, and Ctrl+U for Inspect Element
+        document.addEventListener('keydown', function(event) {
+            // Check for F12 key or Ctrl+Shift+I or Ctrl+U
+            if ((event.key === 'F12') || 
+                (event.ctrlKey && event.shiftKey && (event.key === 'I')) || 
+                (event.ctrlKey && (event.key === 'U'))) {
+                event.preventDefault();
+            }
+        });
+    </script>
+    
+    
+
+</body>
+
+</html>

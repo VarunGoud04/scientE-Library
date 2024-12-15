@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register - Scient E-Library</title>
+    <link rel="stylesheet" href="styles.css">  
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        /* Navigation Bar Styling */
+        nav {
+            background-color: #333;
+            overflow: hidden;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            display: inline-block;
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: rgb(0, 0, 0);
+        }
+
+        .form-container {
+            width: 40%;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-container label {
+            font-size: 16px;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .form-container input[type="text"],
+        .form-container input[type="email"],
+        .form-container input[type="password"],
+        .form-container select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-container button {
+            width: 100%;
+            padding: 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .form-container button:hover {
+            background-color: #45a049;
+        }
+
+        .form-container p {
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Scient E-Library - Register</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="login.html">Login</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Registration Form -->
+    <div class="form-container">
+        <h2>Create an Account</h2>
+        <form action="/register" method="post">
+            <!-- Full Name -->
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+
+            <!-- Email Address -->
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+            <!-- Password -->
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required placeholder="Enter your password" 
+                   minlength="8" 
+                   pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" 
+                   title="Password must be at least 8 characters long and include at least one uppercase letter, one lowercase letter, one number, and one special character.">
+
+            <!-- Confirm Password -->
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" required placeholder="Confirm your password">
+
+            <label for="university">University</label>
+            <input type="text" id="university" name="university" value="JNTUH  Students only " readonly>
+
+            <!-- College Name -->
+            <label for="college">College Name</label>
+            <select id="college" name="college" required>
+                <option value="select">Choose your college</option>
+                <option>AAR Mahaveer Engineering College</option>
+<option>Abdul Kalam Institute of Technological Sciences</option>
+<option>Abhinav Hi-Tech College of Engineering (formerly Hi-Tech College of Engineering & Technology)</option>
+<option>ACE Engineering College</option>
+<option>Annamacharya Institute of Technology & Sciences</option>
+<option>AnuBose Institute of Technology</option>
+<option>Anurag College of Engineering</option>
+<option>ANURAG ENGINEERING COLLEGE</option>
+<option>Anurag Group of Institutions</option>
+<option>ARJUN COLLEGE OF TECHNOLOGY & SCIENCES</option>
+<option>Arkay College of Engineering & Technology</option>
+<option>ASHOKA BUSINESS SCHOOL</option>
+<option>ASHOKA Institute of Engineering & Technology</option>
+<option>Aurora's Scientific & Technological Institute</option>
+<option>Aurora's Technological and Research Institute</option>
+<option>AVANTHI INSTITUTE OF ENGINEERING & TECHNOLOGY</option>
+<option>AVANTHI'S SCIENTIFIC TECHNOLOGICAL & RESEARCH ACADEMY</option>
+<option>AVN INSTITUTE OF ENGINEERING AND TECHNOLOGY</option>
+<option>B.V.Raju Institute of Technology</option>
+<option>Balaji Institute of Management Sciences</option>
+<option>BALAJI INSTITUTE OF TECHNOLOGY & SCIENCE</option>
+<option>BANDARI SRINIVAS INSTITUTE OF TECHNOLOGY</option>
+<option>BHARAT INSTITUTE OF TECHNOLOGY</option>
+<option>Bharat Institute of Engineering and Technology</option>
+<option>BHASKAR ENGINEERING COLLEGE</option>
+<option>BHASKAR PHARMACY COLLEGE</option>
+<option>Bhoj Reddy Engineering College for Women</option>
+<option>Bojjam Narasimhulu Pharmacy College for Women</option>
+<option>Bomma Institute of Technology And Science</option>
+<option>BRILLIANT INSTITUTE OF ENGINEERING & TECHNOLOGY</option>
+<option>BVRIT Hyderabad College of Engineering for Women</option>
+<option>CMR College of Engineering & Technology</option>
+<option>CMR ENGINEERING COLLEGE</option>
+<option>CMR Institute of Technology</option>
+<option>CMR TECHNICAL CAMPUS</option>
+<option>Crimson Institute of Technology</option>
+<option>CSI WESLEY INSTITUTE OF TECHNOLOGY AND SCIENCES</option>
+<option>CVR College of Engineering</option>
+<option>Daripally Anantha Ramulu College of Engineering & Technology</option>
+<option>Dr.V.R.K Women's College of Engineering & Technology</option>
+<option>DRK College of Engineering and Technology</option>
+<option>DRK Institute of Science & Technology</option>
+<option>Ellenki College of Engineering and Technology</option>
+<option>Ellenki Institute of Engineering and Technology</option>
+<option>G. Narayanamma Institute of Technology & Science, For Women</option>
+<option>Ganapathy Engineering College</option>
+<option>Gate Institute of Technology and Sciences</option>
+<option>Geetanjali College of Engineering and Technology</option>
+<option>Global Institute of Engineering & Technology</option>
+<option>Gokaraju Rangaraju Institute of Engineering & Technology</option>
+<option>Guru Nanak Institute of Technology</option>
+<option>Guru Nanak Institutions Technical Campus</option>
+<option>Holy Mary Institute of Technology & Science</option>
+<option>Hyderabad Institute of Technology and Management</option>
+<option>Indur Institute of Engineering & Technology</option>
+<option>Institute of Aeronautical Engineering</option>
+<option>J.B. Institute of Engineering & Technology</option>
+<option>Jayamukhi Institute of Technological Sciences</option>
+<option>Jayaprakash Narayan College of Engineering</option>
+<option>Joginpally B.R. Engineering College</option>
+<option>Jyothishmathi Institute of Technological Sciences</option>
+<option>Jyothishmathi Institute of Technology & Science</option>
+<option>Kakatiya Institute of Technology and Science for Women</option>
+<option>Kamala Institute of Technology & Science</option>
+<option>Kasireddy Narayan Reddy College of Engineering & Research</option>
+<option>KBR Engineering College</option>
+<option>Keshav Memorial College of Engineering</option>
+<option>Keshav Memorial Institute of Technology</option>
+<option>KG Reddy College of Engineering & Technology</option>
+<option>Khader Memorial College of Engineering & Technology</option>
+<option>KLR College of Engineering & Technology</option>
+<option>Kodada Institute of Technology & Science for Women</option>
+<option>Kommuri Pratap Reddy Institute of Technology</option>
+<option>Kshatriya College of Engineering</option>
+<option>Madhira Institute of Technology & Science</option>
+<option>Mahatma Gandhi Institute of Technology</option>
+<option>Mahaveer Institute of Science & Technology</option>
+<option>Malla Reddy College of Engineering</option>
+<option>Malla Reddy College of Engineering and Technology (Autonomous)</option>
+<option>Malla Reddy Engineering College and Management Sciences</option>
+<option>Malla Reddy Engineering College for Women</option>
+<option>Malla Reddy Engineering College (Autonomous)</option>
+<option>Malla Reddy Institute of Engineering and Technology</option>
+<option>Malla Reddy Institute of Technology</option>
+<option>Malla Reddy Institute of Technology & Science</option>
+<option>Marri Laxman Reddy Institute of Technology and Management</option>
+<option>Medak College of Engineering and Technology</option>
+<option>Megha Institute of Engineering & Technology for Women</option>
+<option>MLR Institute of Technology</option>
+<option>MNR College of Engineering and Technology</option>
+<option>Moonray Institute of Technology</option>
+<option>Mother Teresa Institute of Science & Technology</option>
+<option>Siddhartha Institute of Engineering & Technology</option>
+<option>Siddhartha Institute of Technology & Sciences</option>
+<option>Sphoorthy Engineering College</option>
+<option>Sree Chaitanya College of Engineering</option>
+<option>Sree Chaitanya Institute of Technological Sciences</option>
+<option>Sree Dattha Institute of Engineering and Science</option>
+<option>Sree Dattha Institute of Technology & Sciences</option>
+<option>Sree Visvesvaraya Institute of Technology & Science</option>
+<option>Sreenidhi Institute of Science & Technology</option>
+<option>Sreyas Institute of Engineering and Technology</option>
+<option>Sri Chaitanya Institute of Technology and Research</option>
+<option>Sri Chaitanya Technical Campus</option>
+<option>Sri Indu College of Engineering & Technology</option>
+<option>Sri Indu Institute of Engineering & Technology</option>
+<option>Sri Venkateswara Engineering College</option>
+<option>Sridevi Women's Engineering College</option>
+<option>SSJ College of Engineering & Technology</option>
+<option>St. Martin's Engineering College</option>
+<option>St. Mary's Engineering College</option>
+<option>St. Peter's Engineering College</option>
+<option>St. Mary's Group of Institutions Hyderabad</option>
+<option>Sultan-ul-Uloom College of Engineering & Technology</option>
+<option>Sumathi Reddy Institute of Technology for Women</option>
+<option>Talla Padmavathi College of Engineering & Technology</option>
+<option>Teegala Krishna Reddy Engineering College</option>
+<option>Teegala Ram Reddy Institute of Technology & Sciences</option>
+<option>TKR College of Engineering & Technology</option>
+<option>Trinity College of Engineering & Technology</option>
+<option>Trinity College of Engineering and Technology</option>
+<option>TRR College of Engineering</option>
+<option>Tudi Ram Reddy Institute of Technology & Sciences</option>
+<option>Unity College of Engineering & Technology</option>
+<option>Vaagdevi College of Engineering</option>
+<option>Vaagdevi Engineering College</option>
+<option>Vardhaman College of Engineering</option>
+<option>VNR Vignana Jyothi Institute of Engineering & Technology</option>
+
+                
+                <!-- Add more colleges as per JNTUH affiliations -->
+            </select>
+
+            <!-- Regulation -->
+            <label for="regulation">Regulation</label>
+            <select id="regulation" name="regulation" required>
+                <option value="R18">R18</option>
+                <option value="R22">R22</option>
+            </select>
+
+            <!-- Branch -->
+            <label for="branch">Branch</label>
+            <select id="branch" name="branch" required>
+                <option value="CSE">CSE</option>
+                <option value="AI-ML">AI & ML</option>
+                <option value="ECE">ECE</option>
+                <option value="AIDS">AIDS</option>
+                <option value="CSM">CSM</option>
+                <option value="CSC (Cybersecurity)">CSC (Cybersecurity)</option>
+            </select>
+
+            <!-- Register Button -->
+            <button type="submit">Register</button>
+        </form>
+        <p>Already have an account? <a href="/login">Login here</a></p>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Developed by Varun Goud | Department of CSE (AY 2022-2026) | Copy of all rights reserved</p>
+    </footer>
+
+</body>
+
+</html>

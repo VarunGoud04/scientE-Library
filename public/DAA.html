@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Design and Analysis of Algorithms (R22) | Scient E-Library</title>
+    <link rel="icon" type="image/png" href="logo11.jpg">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <style>
+        /* Custom Styles */
+        .navbar a:hover {
+            color: #ffeb3b;
+            transition: color 0.3s ease;
+        }
+
+        footer {
+            background-color: #e7ecef;  /* Dark background for footer */
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: #ffeb3b;
+        }
+
+        section {
+            padding: 4rem 0;
+        }
+
+        .cta-button {
+            background-color: #002f6c;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #003366;
+            transform: scale(1.05);
+        }
+
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Full-height Section for better page coverage */
+        .full-height {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+        /* Adjust grid for better display */
+        .grid-cols-custom {
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        }
+
+        /* Popup Styling */
+        .popup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .popup-content {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            width: 80%;
+            max-width: 500px;
+        }
+
+        .popup button {
+            background-color: #e53e3e;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .popup button:hover {
+            background-color: #c53030;
+        }
+
+        .fab.fa-instagram {
+            color: #e1306c;
+        }
+
+        .social-media a:hover {
+            opacity: 0.8;
+        }
+
+        .fab.fa-facebook {
+            color: #1877f2;
+        }
+
+        .fab.fa-twitter {
+            color: #1da1f2;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Fixed Navigation Bar -->
+    <nav class="bg-blue-800 text-white py-4 sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-semibold">Scient E-Library</a>
+            <div class="space-x-6 navbar">
+                <a href="#important-concepts" class="hover:text-yellow-400">Important Concepts</a>
+                <a href="#previous-exams" class="hover:text-yellow-400">Previous Year Exams</a>
+                <a href="#reference-materials" class="hover:text-yellow-400">Reference Materials</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="bg-blue-900 text-white full-height">
+        <div>
+            <h1 class="text-5xl font-extrabold">Design and Analysis of Algorithms (R22)</h1>
+            <p class="text-xl mt-4 max-w-3xl mx-auto">Explore key resources related to **Design and Analysis of Algorithms**, a core subject for Computer Science and Engineering students. This includes important concepts, previous year exam papers, and reference materials.</p>
+            <a href="#important-concepts" class="cta-button mt-8 inline-block">Start Exploring</a>
+        </div>
+    </section>
+
+    <!-- Important Concepts Section -->
+    <section id="important-concepts" class="bg-gray-50 text-center py-16">
+        <h2 class="text-3xl font-semibold text-blue-900">Important Concepts - DAA</h2>
+        <p class="text-lg mt-4 max-w-3xl mx-auto">Here are the key concepts for **Design and Analysis of Algorithms**, essential for your exam preparation.</p>
+        <div class="grid grid-cols-custom gap-6 mt-12">
+            <!-- Sorting Algorithms -->
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">Sorting Algorithms</h3>
+                <ul class="mt-4 text-left">
+                    <li>Bubble Sort</li>
+                    <li>Selection Sort</li>
+                    <li>Merge Sort</li>
+                    <li>Quick Sort</li>
+                </ul>
+            </div>
+            <!-- Divide and Conquer -->
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">Divide and Conquer</h3>
+                <ul class="mt-4 text-left">
+                    <li>Recursion and Subproblems</li>
+                    <li>Master Theorem</li>
+                    <li>Binary Search</li>
+                    <li>Merge Sort and Quick Sort</li>
+                </ul>
+            </div>
+            <!-- Dynamic Programming -->
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">Dynamic Programming</h3>
+                <ul class="mt-4 text-left">
+                    <li>Fibonacci Sequence</li>
+                    <li>Knapsack Problem</li>
+                    <li>Longest Common Subsequence</li>
+                    <li>Matrix Chain Multiplication</li>
+                </ul>
+            </div>
+            <!-- Greedy Algorithms -->
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">Greedy Algorithms</h3>
+                <ul class="mt-4 text-left">
+                    <li>Activity Selection Problem</li>
+                    <li>Huffman Coding</li>
+                    <li>Fractional Knapsack</li>
+                    <li>Prim's and Kruskal's Algorithms</li>
+                </ul>
+            </div>
+            <!-- Graph Algorithms -->
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">Graph Algorithms</h3>
+                <ul class="mt-4 text-left">
+                    <li>Depth-First Search (DFS)</li>
+                    <li>Breadth-First Search (BFS)</li>
+                    <li>Dijkstra's Algorithm</li>
+                    <li>Minimum Spanning Tree</li>
+                </ul>
+            </div>
+            <!-- NP-Completeness -->
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">NP-Completeness</h3>
+                <ul class="mt-4 text-left">
+                    <li>Complexity Classes</li>
+                    <li>Reduction Techniques</li>
+                    <li>NP-Complete Problems</li>
+                    <li>P vs NP Problem</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Previous Year Exams Section -->
+    <section id="previous-exams" class="bg-blue-100 text-center py-16">
+        <h2 class="text-3xl font-semibold text-blue-900">Previous Year Exams - DAA</h2>
+        <p class="text-lg mt-4 max-w-3xl mx-auto">Here are previous year exam papers for **Design and Analysis of Algorithms**, helping you to prepare for the exams effectively.</p>
+        <div class="grid grid-cols-custom gap-6 mt-12">
+            <!-- DAA Exam Papers -->
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">DAA - Previous Year Papers</h3>
+                <p class="mt-4">Download and practice previous year exam papers on DAA topics such as sorting, dynamic programming, graph algorithms, and more.</p><br>
+                <div>
+                    <a href="./allnotes/DAA Notes.pdf" class="cta-button mt-4">Download Previous Year Question Papers</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reference Materials Section -->
+    <section id="reference-materials" class="bg-white text-center py-16">
+        <h2 class="text-3xl font-semibold text-blue-900">Reference Materials - DAA</h2>
+        <p class="text-lg mt-4 max-w-3xl mx-auto">Download essential reference materials and notes to enhance your understanding of **Design and Analysis of Algorithms**.</p>
+        <div class="grid grid-cols-custom gap-6 mt-12">
+            <!-- DAA Notes -->
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">DAA - Key Concepts</h3>
+                <p class="mt-4">Download notes covering the essential concepts of DAA, including sorting algorithms, dynamic programming, graph theory, and more.</p><br>
+                <div>
+                    <a href="./allnotes/DAA Notes.pdf" class="cta-button mt-4">Download Notes</a>
+                </div>
+             
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Follow us on 
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/varungoud___21/" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+        </p>
+        <p>&copy; 2024 Scient E-Library. All rights reserved. | Developed by Varun Goud & Team | Department of CSE (AY 2022-2026).</p>
+    </footer>
+    <script>
+        // Disable Right-Click
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+        });
+    
+        // Disable Double-Click
+        document.addEventListener('dblclick', function(event) {
+            event.preventDefault();
+        });
+    
+        // Disable F12, Ctrl+Shift+I, and Ctrl+U for Inspect Element
+        document.addEventListener('keydown', function(event) {
+            // Check for F12 key or Ctrl+Shift+I or Ctrl+U
+            if ((event.key === 'F12') || 
+                (event.ctrlKey && event.shiftKey && (event.key === 'I')) || 
+                (event.ctrlKey && (event.key === 'U'))) {
+                event.preventDefault();
+            }
+        });
+    </script>
+    
+
+</body>
+</html>

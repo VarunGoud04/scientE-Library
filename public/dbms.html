@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Database Management Systems (DBMS) | Scient E-Library</title>
+    <link rel="icon" type="image/png" href="logo11.jpg">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <style>
+        /* Custom Styles */
+        .navbar a:hover {
+            color: #ffeb3b;
+            transition: color 0.3s ease;
+        }
+
+        footer {
+            background-color: #e7ecef;  /* Dark background for footer */
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: #ffeb3b;
+        }
+
+        section {
+            padding: 4rem 0;
+        }
+
+        .cta-button {
+            background-color: #002f6c;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #003366;
+            transform: scale(1.05);
+        }
+
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Full-height Section for better page coverage */
+        .full-height {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+        /* Adjust grid for better display */
+        .grid-cols-custom {
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        }
+
+        /* Popup Styling */
+        .popup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .popup-content {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            width: 80%;
+            max-width: 500px;
+        }
+
+        .popup button {
+            background-color: #e53e3e;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .popup button:hover {
+            background-color: #c53030;
+        }
+
+        .fab.fa-instagram {
+            color: #e1306c;
+        }
+
+        .social-media a:hover {
+            opacity: 0.8;
+        }
+
+        .fab.fa-facebook {
+            color: #1877f2;
+        }
+
+        .fab.fa-twitter {
+            color: #1da1f2;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Fixed Navigation Bar -->
+    <nav class="bg-blue-800 text-white py-4 sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-semibold">Scient E-Library</a>
+            <div class="space-x-6 navbar">
+                <a href="#important-concepts" class="hover:text-yellow-400">Important Concepts</a>
+                <a href="#previous-exams" class="hover:text-yellow-400">Previous Year Exams</a>
+                <a href="#reference-materials" class="hover:text-yellow-400">Reference Materials</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="bg-blue-900 text-white full-height">
+        <div>
+            <h1 class="text-5xl font-extrabold">Database Management Systems (DBMS)</h1>
+            <p class="text-xl mt-4 max-w-3xl mx-auto">Explore key resources related to **Database Management Systems (DBMS)**, a core subject for Computer Science and Engineering students. This includes important concepts, previous year exam papers, and reference materials.</p>
+            <a href="#" onclick="showPopup('Content is not updated yet. We will update soon!')" class="cta-button mt-8 inline-block">Start Exploring</a>
+        </div>
+    </section>
+
+    <!-- Important Concepts Section -->
+    <section id="important-concepts" class="bg-gray-50 text-center py-16">
+        <h2 class="text-3xl font-semibold text-blue-900">Important Concepts - DBMS</h2>
+        <p class="text-lg mt-4 max-w-3xl mx-auto">Here are the key concepts for **Database Management Systems**, essential for your exam preparation.</p>
+        <div class="grid grid-cols-custom gap-6 mt-12">
+            <!-- Database Architecture -->
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">Database Architecture</h3>
+                <ul class="mt-4 text-left">
+                    <li>Database Models</li>
+                    <li>Entity-Relationship Model</li>
+                    <li>Normalization</li>
+                    <li>Database Design</li>
+                </ul>
+                <a href="#" onclick="showPopup('Content is not updated yet. We will update soon!')" class="cta-button mt-4">Explore</a>
+            </div>
+            <!-- SQL Queries -->
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">SQL Queries</h3>
+                <ul class="mt-4 text-left">
+                    <li>SELECT, INSERT, UPDATE, DELETE</li>
+                    <li>Joins (Inner, Outer, Left, Right)</li>
+                    <li>Subqueries and Nested Queries</li>
+                </ul>
+                <a href="#" onclick="showPopup('Content is not updated yet. We will update soon!')" class="cta-button mt-4">Explore</a>
+            </div>
+            <!-- Transaction Management -->
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">Transaction Management</h3>
+                <ul class="mt-4 text-left">
+                    <li>ACID Properties</li>
+                    <li>Concurrency Control</li>
+                    <li>Transaction Isolation Levels</li>
+                </ul>
+                <a href="#" onclick="showPopup('Content is not updated yet. We will update soon!')" class="cta-button mt-4">Explore</a>
+            </div>
+            <!-- Indexing and Hashing -->
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">Indexing and Hashing</h3>
+                <ul class="mt-4 text-left">
+                    <li>B-tree and B+ Tree Indexing</li>
+                    <li>Hashing Techniques</li>
+                    <li>Search Optimization</li>
+                </ul>
+                <a href="#" onclick="showPopup('Content is not updated yet. We will update soon!')" class="cta-button mt-4">Explore</a>
+            </div>
+            <!-- Data Warehousing -->
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">Data Warehousing</h3>
+                <ul class="mt-4 text-left">
+                    <li>ETL Process</li>
+                    <li>OLAP and OLTP</li>
+                    <li>Data Cubes</li>
+                </ul>
+                <a href="#" onclick="showPopup('Content is not updated yet. We will update soon!')" class="cta-button mt-4">Explore</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Previous Year Exams Section -->
+    <section id="previous-exams" class="bg-blue-100 text-center py-16">
+        <h2 class="text-3xl font-semibold text-blue-900">Previous Year Exams - DBMS</h2>
+        <p class="text-lg mt-4 max-w-3xl mx-auto">Here are previous year exam papers for **DBMS**, helping you to prepare for the exams effectively.</p>
+        <div class="grid grid-cols-custom gap-6 mt-12">
+            <!-- DBMS Exam Papers -->
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">DBMS - Previous Year Papers</h3>
+                <p class="mt-4">Download and practice previous year exam papers on topics such as database architecture, SQL queries, and more.</p><br>
+                <div>
+                    <a href="./allnotes/DBMS_Notes.pdf" class="cta-button mt-4">Download Previous Year Question Papers</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reference Materials Section -->
+    <section id="reference-materials" class="bg-white text-center py-16">
+        <h2 class="text-3xl font-semibold text-blue-900">Reference Materials - DBMS</h2>
+        <p class="text-lg mt-4 max-w-3xl mx-auto">Download essential reference materials and notes to enhance your understanding of **DBMS**.</p>
+        <div class="grid grid-cols-custom gap-6 mt-12">
+            <!-- DBMS Notes -->
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">DBMS - Key Concepts</h3>
+                <p class="mt-4">Download notes covering the essential concepts of Database Management Systems, including database design, SQL, and more.</p><br>
+                <div>
+                    <a href="./allnotes/DBMS_Notes.pdf" class="cta-button mt-4">Download Notes</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Follow us on 
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/varungoud___21/" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+        </p>
+        <p>&copy; 2024 Scient E-Library. All rights reserved. | Developed by Varun Goud & Team | Department of CSE (AY 2022-2026).</p>
+    </footer>
+
+    <script>
+        function showPopup(message) {
+            document.getElementById("popup-message").textContent = message;
+            document.getElementById("popup").style.display = "flex";
+        }
+
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+    </script>
+    <script>
+        // Disable Right-Click
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+        });
+    
+        // Disable Double-Click
+        document.addEventListener('dblclick', function(event) {
+            event.preventDefault();
+        });
+    
+        // Disable F12, Ctrl+Shift+I, and Ctrl+U for Inspect Element
+        document.addEventListener('keydown', function(event) {
+            // Check for F12 key or Ctrl+Shift+I or Ctrl+U
+            if ((event.key === 'F12') || 
+                (event.ctrlKey && event.shiftKey && (event.key === 'I')) || 
+                (event.ctrlKey && (event.key === 'U'))) {
+                event.preventDefault();
+            }
+        });
+    </script>
+    
+
+</body>
+</html>

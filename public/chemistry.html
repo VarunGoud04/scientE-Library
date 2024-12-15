@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chemistry | Scient E-Library</title>
+    <link rel="icon" type="image/png" href="logo11.jpg">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <style>
+        /* Custom Styles */
+        .navbar a:hover {
+            color: #ffeb3b;
+            transition: color 0.3s ease;
+        }
+
+        footer {
+            background-color: #1a202c;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        footer a {
+            color: #ffeb3b;
+        }
+
+        section {
+            padding: 4rem 0;
+        }
+
+        .cta-button {
+            background-color: #002f6c;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #003366;
+            transform: scale(1.05);
+        }
+
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Pop-up Styles */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .popup-content {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            width: 50%;
+            text-align: center;
+        }
+
+        .popup-content button {
+            background-color: #002f6c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .popup-content button:hover {
+            background-color: #003366;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100" oncontextmenu="return false;" onmousedown="return false;" onselectstart="return false;">
+
+    <!-- Fixed Navigation Bar -->
+    <nav class="bg-blue-800 text-white py-4 sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-semibold">Scient E-Library</a>
+            <div class="space-x-6 navbar">
+                <a href="#important-questions" class="hover:text-yellow-400">Important Questions</a>
+                <a href="#previous-questions" class="hover:text-yellow-400">Previous Year Questions</a>
+                <a href="#reference-notes" class="hover:text-yellow-400">Reference Notes</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="bg-blue-900 text-white text-center py-20">
+        <h1 class="text-5xl font-extrabold">Welcome to Chemistry Resources</h1>
+        <p class="text-xl mt-4 max-w-3xl mx-auto">Explore all the essential study materials for **Chemistry** for B.Tech students. This includes important questions, previous year exam papers, and detailed reference notes.</p>
+        <a href="#important-questions" class="cta-button mt-8 inline-block">Start Exploring</a>
+    </section>
+
+    <!-- Important Questions Section -->
+    <section id="important-questions" class="bg-gray-50 text-center py-16">
+        <h2 class="text-3xl font-semibold text-blue-900">Important Questions - Chemistry</h2>
+        <p class="text-lg mt-4 max-w-3xl mx-auto">Here you will find a list of important questions for Chemistry, which are highly relevant for your B.Tech exams under the JNTUH syllabus.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">Physical Chemistry - Important Questions</h3>
+                <ul class="mt-4 text-left">
+                    <li>Derive and explain the First Law of Thermodynamics.</li>
+                    <li>Explain the concept of chemical equilibrium and Le Chatelier’s Principle.</li>
+                    <li>Discuss the concept of chemical kinetics and factors affecting reaction rates.</li>
+                    <li>Explain the different types of solutions and their properties.</li>
+                </ul>
+            </div>
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">Inorganic Chemistry - Important Questions</h3>
+                <ul class="mt-4 text-left">
+                    <li>Discuss the properties and classification of transition metals.</li>
+                    <li>Explain the principles of oxidation-reduction reactions.</li>
+                    <li>Describe the structure and bonding in coordination compounds.</li>
+                    <li>Explain the concept of crystal field theory and its applications.</li>
+                </ul>
+            </div>
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">Organic Chemistry - Important Questions</h3>
+                <ul class="mt-4 text-left">
+                    <li>Discuss the methods of preparation and properties of alkanes and alkenes.</li>
+                    <li>Explain the mechanisms of nucleophilic substitution reactions.</li>
+                    <li>Describe the concept of aromaticity and its applications in benzene chemistry.</li>
+                    <li>Discuss the methods of synthesis of various functional groups like alcohols, ethers, and aldehydes.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reference Notes Section -->
+    <section id="reference-notes" class="bg-white text-center py-16">
+        <h2 class="text-3xl font-semibold text-blue-900">Reference Notes - Chemistry</h2>
+        <p class="text-lg mt-4 max-w-3xl mx-auto">Download reference notes on **Physical Chemistry**, **Inorganic Chemistry**, and **Organic Chemistry** designed for B.Tech students to help in understanding core concepts.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">Physical Chemistry Notes</h3>
+                <p class="mt-4">Download notes covering fundamental topics such as thermodynamics, chemical equilibrium, and kinetics in physical chemistry.</p>
+                <a href="#" class="cta-button mt-4" onclick="showPopup()">Download Notes</a>
+            </div>
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">Inorganic Chemistry Notes</h3>
+                <p class="mt-4">Access notes covering topics like oxidation-reduction, transition metals, and coordination compounds in inorganic chemistry.</p>
+                <a href="#" class="cta-button mt-4" onclick="showPopup()">Download Notes</a>
+            </div>
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">Organic Chemistry Notes</h3>
+                <p class="mt-4">Download detailed reference notes on organic chemistry topics such as functional groups, reaction mechanisms, and aromatic compounds.</p>
+                <a href="#" class="cta-button mt-4" onclick="showPopup()">Download Notes</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© © 2024 Scient E-Library. All rights reserved. | Developed by Varun Goud & Team | Department of CSE (AY 2022-2026).</p>
+        <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Use</a></p>
+    </footer>
+
+    <!-- Popup Section -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <p>Currently under maintenance. Please try again later.</p>
+            <button onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <script>
+        // Show Popup
+        function showPopup() {
+            document.getElementById('popup').style.display = 'flex';
+        }
+
+        // Close Popup
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+    </script>
+    <script>
+        // Disable Right-Click
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+        });
+    
+        // Disable Double-Click
+        document.addEventListener('dblclick', function(event) {
+            event.preventDefault();
+        });
+    
+        // Disable F12, Ctrl+Shift+I, and Ctrl+U for Inspect Element
+        document.addEventListener('keydown', function(event) {
+            // Check for F12 key or Ctrl+Shift+I or Ctrl+U
+            if ((event.key === 'F12') || 
+                (event.ctrlKey && event.shiftKey && (event.key === 'I')) || 
+                (event.ctrlKey && (event.key === 'U'))) {
+                event.preventDefault();
+            }
+        });
+    </script>
+    
+
+</body>
+
+</html>

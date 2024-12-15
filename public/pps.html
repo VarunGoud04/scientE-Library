@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Programming for Problem Solving | Scient E-Library</title>
+    <link rel="icon" type="image/png" href="logo11.jpg">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <style>
+        /* Custom Styles */
+        .navbar a:hover {
+            color: #ffeb3b;
+            transition: color 0.3s ease;
+        }
+
+        footer {
+            background-color: #1a202c;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        footer a {
+            color: #ffeb3b;
+        }
+
+        section {
+            padding: 4rem 0;
+        }
+
+        .cta-button {
+            background-color: #002f6c;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #003366;
+            transform: scale(1.05);
+        }
+
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Pop-up Styles */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .popup-content {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            width: 50%;
+            text-align: center;
+        }
+
+        .popup-content button {
+            background-color: #002f6c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .popup-content button:hover {
+            background-color: #003366;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100" oncontextmenu="return false;" onmousedown="return false;" onselectstart="return false;">
+
+    <!-- Fixed Navigation Bar -->
+    <nav class="bg-blue-800 text-white py-4 sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-semibold">Scient E-Library</a>
+            <div class="space-x-6 navbar">
+                <a href="#important-questions" class="hover:text-yellow-400">Important Questions</a>
+                <a href="#previous-questions" class="hover:text-yellow-400">Previous Year Questions</a>
+                <a href="#reference-notes" class="hover:text-yellow-400">Reference Notes</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="bg-blue-900 text-white text-center py-20">
+        <h1 class="text-5xl font-extrabold">Welcome to Programming for Problem Solving (PPS)</h1>
+        <p class="text-xl mt-4 max-w-3xl mx-auto">Explore key resources related to **Programming for Problem Solving**, a core subject for B.Tech students. This includes important questions, previous year exam papers, and detailed reference notes.</p>
+        <a href="#important-questions" class="cta-button mt-8 inline-block">Start Exploring</a>
+    </section>
+
+    <!-- Important Questions Section -->
+    <section id="important-questions" class="bg-gray-50 text-center py-16">
+        <h2 class="text-3xl font-semibold text-blue-900">Important Questions - PPS</h2>
+        <p class="text-lg mt-4 max-w-3xl mx-auto">Here you'll find a curated list of important questions for **Programming for Problem Solving** that will help you excel in your B.Tech exams.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">Basic Programming Concepts</h3>
+                <ul class="mt-4 text-left">
+                    <li>Write a program to find the largest of three numbers.</li>
+                    <li>Explain the difference between pass-by-value and pass-by-reference.</li>
+                    <li>Write a program to swap two numbers without using a third variable.</li>
+                    <li>Write a program to check if a given number is prime or not.</li>
+                </ul>
+            </div>
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">Control Structures & Loops</h3>
+                <ul class="mt-4 text-left">
+                    <li>Write a program to print the Fibonacci series.</li>
+                    <li>Write a program to print the first N prime numbers.</li>
+                    <li>Write a program to reverse a number using loops.</li>
+                    <li>Write a program to find the factorial of a number using recursion.</li>
+                </ul>
+            </div>
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">Arrays & Functions</h3>
+                <ul class="mt-4 text-left">
+                    <li>Write a program to find the sum of all elements in an array.</li>
+                    <li>Write a program to merge two arrays.</li>
+                    <li>Write a program to find the second largest number in an array.</li>
+                    <li>Write a program to implement a function to count the occurrences of an element in an array.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Previous Year Questions Section -->
+    <section id="previous-questions" class="bg-blue-100 text-center py-16">
+        <h2 class="text-3xl font-semibold text-blue-900">Previous Year Questions - PPS</h2>
+        <p class="text-lg mt-4 max-w-3xl mx-auto">Explore previous year question papers for **Programming for Problem Solving**. These papers will give you insights into the types of questions asked in the exams.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">Basic Programming - Previous Year Papers</h3>
+                <p class="mt-4">Download and practice questions covering topics like loops, conditional statements, and basic problem-solving algorithms.</p>
+            </div>
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">Data Structures & Algorithms - Previous Year Papers</h3>
+                <p class="mt-4">Access previous year question papers on data structures such as arrays, linked lists, stacks, queues, and their algorithms.</p>
+            </div>
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">Problem Solving - Previous Year Papers</h3>
+                <p class="mt-4">Review past papers focused on problem-solving strategies, algorithmic approaches, and optimization techniques.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reference Notes Section -->
+    <section id="reference-notes" class="bg-white text-center py-16">
+        <h2 class="text-3xl font-semibold text-blue-900">Reference Notes - PPS</h2>
+        <p class="text-lg mt-4 max-w-3xl mx-auto">Download reference notes that cover core concepts and algorithms in **Programming for Problem Solving** to strengthen your programming skills.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">Basic Programming Concepts</h3>
+                <p class="mt-4">Access detailed notes on basic programming concepts like variables, data types, loops, and conditionals.</p>
+                <a href="#" class="cta-button mt-4" onclick="showPopup()">Download Notes</a>
+            </div>
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">Data Structures & Algorithms</h3>
+                <p class="mt-4">Download reference notes on key data structures and algorithms, including sorting, searching, and recursion.</p>
+                <a href="#" class="cta-button mt-4" onclick="showPopup()">Download Notes</a>
+            </div>
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">Problem Solving Strategies</h3>
+                <p class="mt-4">Learn problem-solving techniques like divide and conquer, dynamic programming, and greedy algorithms.</p>
+                <a href="#" class="cta-button mt-4" onclick="showPopup()">Download Notes</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popup -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <h3>Currently under maintenance. Please try again later.</h3>
+            <button onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Scient E-Library. All rights reserved. | Developed by Varun Goud & Team | Department of CSE (AY 2022-2026).</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+    </footer>
+
+    <script>
+        // Pop-up function
+        function showPopup() {
+            document.getElementById('popup').style.display = 'flex';
+        }
+
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+    </script>
+    <script>
+        // Disable Right-Click
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+        });
+    
+        // Disable Double-Click
+        document.addEventListener('dblclick', function(event) {
+            event.preventDefault();
+        });
+    
+        // Disable F12, Ctrl+Shift+I, and Ctrl+U for Inspect Element
+        document.addEventListener('keydown', function(event) {
+            // Check for F12 key or Ctrl+Shift+I or Ctrl+U
+            if ((event.key === 'F12') || 
+                (event.ctrlKey && event.shiftKey && (event.key === 'I')) || 
+                (event.ctrlKey && (event.key === 'U'))) {
+                event.preventDefault();
+            }
+        });
+    </script>
+    
+
+</body>
+
+</html>

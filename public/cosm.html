@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Computer-Oriented Statistical Methods | Scient E-Library</title>
+    <link rel="icon" type="image/png" href="logo11.jpg">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        /* Modal style */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            width: 80%;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        .modal-close {
+            background-color: red;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .modal-close:hover {
+            background-color: darkred;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-blue-800 text-white py-4 sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-semibold">Scient E-Library</a>
+            <div class="space-x-6 navbar">
+                <a href="#overview" class="hover:text-yellow-400">Overview</a>
+                <a href="#key-topics" class="hover:text-yellow-400">Key Topics</a>
+                <a href="#resources" class="hover:text-yellow-400">Resources</a>
+                <!-- Link that will trigger the popup -->
+                <a href="#" id="maintenance-link" class="hover:text-yellow-400">Maintenance</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="bg-blue-900 text-white text-center py-20">
+        <h1 class="text-5xl font-extrabold">Computer-Oriented Statistical Methods</h1>
+        <p class="text-xl mt-4 max-w-3xl mx-auto">Learn about the application of statistical methods through computational techniques. This subject covers data analysis, statistical software, and the use of computers for efficient statistical computation.</p>
+    </section>
+
+    <!-- Modal for Maintenance Message -->
+    <div id="maintenance-modal" class="modal">
+        <div class="modal-content">
+            <h2 class="text-2xl font-semibold text-red-600">We Are Under Maintenance</h2>
+            <p class="mt-4 text-lg">We are currently performing some updates on our site. Please check back later.</p>
+            <button class="modal-close mt-6" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <script>
+        // Get the modal element
+        const modal = document.getElementById('maintenance-modal');
+        const link = document.getElementById('maintenance-link');
+
+        // Function to open the modal
+        link.onclick = function (event) {
+            event.preventDefault(); // Prevent the default behavior of the link
+            modal.style.display = 'flex'; // Display the modal
+        };
+
+        // Function to close the modal
+        function closeModal() {
+            modal.style.display = 'none'; // Hide the modal
+        }
+    </script>
+    <script>
+        // Disable Right-Click
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+        });
+    
+        // Disable Double-Click
+        document.addEventListener('dblclick', function(event) {
+            event.preventDefault();
+        });
+    
+        // Disable F12, Ctrl+Shift+I, and Ctrl+U for Inspect Element
+        document.addEventListener('keydown', function(event) {
+            // Check for F12 key or Ctrl+Shift+I or Ctrl+U
+            if ((event.key === 'F12') || 
+                (event.ctrlKey && event.shiftKey && (event.key === 'I')) || 
+                (event.ctrlKey && (event.key === 'U'))) {
+                event.preventDefault();
+            }
+        });
+    </script>
+    
+
+</body>
+
+</html>

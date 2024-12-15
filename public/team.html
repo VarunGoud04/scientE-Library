@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet the Team - E-Book Store</title>
+    <link rel="icon" type="image/png" href="logo11.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Base Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #002f6c, #003366);
+            color: #fff;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        .cta-button {
+            background-color: #ff9800;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #e68900;
+            transform: scale(1.05);
+        }
+
+        .social-icons {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 30px;
+            margin: 0 20px;
+            padding: 15px;
+            background-color: #333;
+            border-radius: 50%;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.1);
+            background-color: #ff9800;
+        }
+
+        .team-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 50px auto;
+            gap: 30px;
+            max-width: 1200px;
+        }
+
+        .team-member {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            width: 280px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            padding: 30px;
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .team-member .role {
+            font-size: 1.1rem;
+            color: #008080;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .team-member h3 {
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .team-member p {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background-color: #e7ecef;  /* Dark background for footer */
+            padding: 20px;
+            text-align: center;
+        }
+
+        .social-media a {
+            margin: 0 10px;          /* Space between icons */
+            font-size: 24px;         /* Size of icons */
+            text-decoration: none;   /* Remove underline from links */
+        }
+
+        .fab.fa-facebook {
+            color: #1877f2;          /* Facebook Blue */
+        }
+
+        .fab.fa-twitter {
+            color: #1da1f2;          /* Twitter Blue */
+        }
+
+        .fab.fa-instagram {
+            color: #e1306c;          /* Instagram Pinkish */
+        }
+
+        .fab.fa-linkedin {
+            color: #0a66c2;          /* LinkedIn Blue */
+        }
+
+        /* Hover effect */
+        .social-media a:hover {
+            opacity: 0.8;            /* Slightly transparent on hover */
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meet Our Team</h1>
+        <p>Our passionate team is dedicated to providing the best e-books for our readers.</p>
+        <a href="#contact" class="cta-button">Contact Us</a>
+    </header>
+
+    <div class="team-container">
+        <!-- Team Member 1 -->
+        <div class="team-member">
+            <h3>Varun Goud</h3>
+            <p class="role">Developer & Creator</p>
+            <p>Varun is the lead developer and creator of the Scient E-Library platform. As a Computer Science student, he designs and builds the website's infrastructure. His expertise includes web development, coding, and problem-solving, ensuring a smooth and dynamic user experience.</p>
+        </div>
+
+        <!-- Team Member 2 -->
+        <div class="team-member">
+            <h3>Pranay</h3>
+            <p class="role">Web Content Manager</p>
+            <p>Pranay is responsible for managing all content on the platform. He ensures the collection of e-books remains diverse, up-to-date, and organized. With his interest in literature and digital content, he helps curate the perfect selection of e-books for our readers.</p>
+        </div>
+
+        <!-- Team Member 3 -->
+        <div class="team-member">
+            <h3>Vamshi</h3>
+            <p class="role">Network & Security Specialist</p>
+            <p>Vamshi is in charge of maintaining the security and performance of the website. As a student focused on networking and cybersecurity, he ensures that the platform is safe, fast, and reliable. Vamshi also handles any technical issues related to the website's servers and infrastructure.</p>
+        </div>
+    </div>
+
+    <footer>
+        <!-- Social Media Section -->
+        <div>
+            <h5 class="text-xl font-semibold mb-4">FOLLOW US ON</h5>
+            <div class="social-media">
+                <a href="https://www.facebook.com" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/varungoud___21/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <p>&copy; 2024 Scient E-Library. All rights reserved. | Developed by Varun Goud & Team | Department of CSE (AY 2022-2026)</p>
+        </div>
+    </footer>
+    <script>
+        // Disable Right-Click
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+        });
+    
+        // Disable Double-Click
+        document.addEventListener('dblclick', function(event) {
+            event.preventDefault();
+        });
+    
+        // Disable F12, Ctrl+Shift+I, and Ctrl+U for Inspect Element
+        document.addEventListener('keydown', function(event) {
+            // Check for F12 key or Ctrl+Shift+I or Ctrl+U
+            if ((event.key === 'F12') || 
+                (event.ctrlKey && event.shiftKey && (event.key === 'I')) || 
+                (event.ctrlKey && (event.key === 'U'))) {
+                event.preventDefault();
+            }
+        });
+    </script>
+    
+</body>
+</html>

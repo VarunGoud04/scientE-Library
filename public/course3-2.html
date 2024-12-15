@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Course Details - III Year II Semester</title>
+    <link rel="icon" type="image/png" href="logo11.jpg">
+    
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f6f8;
+        }
+
+        header {
+            background-color: #002f6c;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        header p {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        table {
+            width: 80%;
+            margin: 50px auto;
+            border-collapse: collapse;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        table th,
+        table td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        table th {
+            background-color: #002f6c;
+            color: white;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        table tr:hover {
+            background-color: #e2e2e2;
+        }
+
+        table .total-row {
+            background-color: #f2f2f2;
+            font-weight: bold;
+            color: #002f6c;
+        }
+
+        footer {
+            background-color: #004a94;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+        /* Style for links in course names */
+        a {
+            color: #002f6c;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            width: 80%;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        .modal-close {
+            background-color: red;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .modal-close:hover {
+            background-color: darkred;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Course Details - II Year II Semester</h1>
+        <p>List of courses and their corresponding details for the II Year II Semester</p>
+    </header>
+
+    <!-- Course Table -->
+    <table>
+        <thead>
+            <tr>
+                <th>S.No.</th>
+                <th>Course Code</th>
+                <th>Course Title</th>
+                <th>L</th>
+                <th>T</th>
+                <th>P</th>
+                <th>Credits</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>CS601PC</td>
+                <td><a href="#" class="course-link">Machine Learning</a></td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>CS602PC</td>
+                <td><a href="#" class="course-link">Formal Languages and Automata Theory</a></td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>CS603PC</td>
+                <td><a href="#" class="course-link">Artificial Intelligence</a></td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Professional Elective – III</td>
+                <td><a href="#" class="course-link">Professional Elective – III</a></td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Open Elective-I</td>
+                <td><a href="#" class="course-link">Open Elective-I</a></td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>CS604PC</td>
+                <td><a href="#" class="course-link">Machine Learning Lab</a></td>
+                <td>0</td>
+                <td>0</td>
+                <td>2</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>CS605PC</td>
+                <td><a href="#" class="course-link">Artificial Intelligence Laboratory</a></td>
+                <td>0</td>
+                <td>0</td>
+                <td>2</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Professional Elective-III Lab</td>
+                <td><a href="#" class="course-link">Professional Elective-III Lab</a></td>
+                <td>0</td>
+                <td>0</td>
+                <td>2</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>CS606PC</td>
+                <td><a href="#" class="course-link">Industrial Oriented Mini Project/ Internship/ Skill Development Course (Big data-Spark)</a></td>
+                <td>0</td>
+                <td>0</td>
+                <td>4</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>MC609</td>
+                <td><a href="#" class="course-link">Environmental Science</a></td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr class="total-row">
+                <td>Total</td>
+                <td>-</td>
+                <td>-</td>
+                <td>18</td>
+                <td>0</td>
+                <td>8</td>
+                <td>20</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; © 2024 Scient E-Library. All rights reserved. | Developed by Varun Goud & Team | Department of CSE (AY 2022-2026).</p>
+    </footer>
+
+    <!-- Modal for Connection Error -->
+    <div id="server-error-modal" class="modal">
+        <div class="modal-content">
+            <h2 class="text-2xl font-semibold text-red-600">Unable to Connect to Server</h2>
+            <p class="mt-4 text-lg">We are facing technical difficulties and are unable to connect to the server at this moment. Please try again later.</p>
+            <button class="modal-close mt-6" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <script>
+        // Get all the course links and the modal
+        const courseLinks = document.querySelectorAll('.course-link');
+        const modal = document.getElementById('server-error-modal');
+
+        // Function to open the modal
+        courseLinks.forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent default link behavior
+                modal.style.display = 'flex'; // Show the modal
+            });
+        });
+
+        // Function to close the modal
+        function closeModal() {
+            modal.style.display = 'none'; // Hide the modal
+        }
+    </script>
+    <script>
+        // Disable Right-Click
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+        });
+    
+        // Disable Double-Click
+        document.addEventListener('dblclick', function(event) {
+            event.preventDefault();
+        });
+    
+        // Disable F12, Ctrl+Shift+I, and Ctrl+U for Inspect Element
+        document.addEventListener('keydown', function(event) {
+            // Check for F12 key or Ctrl+Shift+I or Ctrl+U
+            if ((event.key === 'F12') || 
+                (event.ctrlKey && event.shiftKey && (event.key === 'I')) || 
+                (event.ctrlKey && (event.key === 'U'))) {
+                event.preventDefault();
+            }
+        });
+    </script>
+    
+</body>
+
+</html>

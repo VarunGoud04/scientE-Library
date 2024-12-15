@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Operating Systems | Scient E-Library</title>
+    <link rel="icon" type="image/png" href="logo11.jpg">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <style>
+        /* Custom Styles */
+        .navbar a:hover {
+            color: #ffeb3b;
+            transition: color 0.3s ease;
+        }
+
+        footer {
+            background-color: #e7ecef;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: #ffeb3b;
+        }
+
+        section {
+            padding: 4rem 0;
+        }
+
+        .cta-button {
+            background-color: #002f6c;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #003366;
+            transform: scale(1.05);
+        }
+
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Full-height Section for better page coverage */
+        .full-height {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+        /* Adjust grid for better display */
+        .grid-cols-custom {
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        }
+
+        /* Popup Styling */
+        .popup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .popup-content {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            width: 80%;
+            max-width: 500px;
+        }
+
+        .popup button {
+            background-color: #e53e3e;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .popup button:hover {
+            background-color: #c53030;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Fixed Navigation Bar -->
+    <nav class="bg-blue-800 text-white py-4 sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-semibold">Scient E-Library</a>
+            <div class="space-x-6 navbar">
+                <a href="#important-concepts" class="hover:text-yellow-400">Important Concepts</a>
+                <a href="#previous-exams" class="hover:text-yellow-400">Previous Year Exams</a>
+                <a href="#reference-materials" class="hover:text-yellow-400">Reference Materials</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="bg-blue-900 text-white full-height">
+        <div>
+            <h1 class="text-5xl font-extrabold">Operating Systems</h1>
+            <p class="text-xl mt-4 max-w-3xl mx-auto">An Operating System (OS) is software that manages computer hardware, software resources, and provides common services for computer programs. It plays a crucial role in system operation, resource management, and providing an interface between the user and the hardware.</p>
+            <a href="#important-concepts" class="cta-button mt-8 inline-block">Start Exploring</a>
+        </div>
+    </section>
+
+    <!-- Important Concepts Section -->
+    <section id="important-concepts" class="bg-gray-50 text-center py-16">
+        <h2 class="text-3xl font-semibold text-blue-900">Important Concepts - Operating Systems</h2>
+        <p class="text-lg mt-4 max-w-3xl mx-auto">Key concepts in Operating Systems include process management, memory management, file systems, inter-process communication, and system security, all of which ensure smooth and efficient computer operation.</p>
+        <div class="grid grid-cols-custom gap-6 mt-12">
+            <!-- Process Management -->
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">Process Management</h3>
+                <p class="mt-4">Process management involves the creation, scheduling, and termination of processes in an operating system. It ensures that each process gets the resources it needs to run effectively.</p>
+                <a href="#" class="cta-button mt-4">Learn More</a>
+            </div>
+            <!-- Memory Management -->
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">Memory Management</h3>
+                <p class="mt-4">Memory management is responsible for managing the system's memory hierarchy. It handles tasks like memory allocation, paging, segmentation, and ensuring efficient memory use.</p>
+                <a href="#" class="cta-button mt-4">Learn More</a>
+            </div>
+            <!-- File Systems -->
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">File Systems</h3>
+                <p class="mt-4">File systems organize and store data in a structured way. They allow users to access, store, and manage data efficiently through directories and files.</p>
+                <a href="#" class="cta-button mt-4">Learn More</a>
+            </div>
+            <!-- Inter-Process Communication -->
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">Inter-Process Communication</h3>
+                <p class="mt-4">Inter-process communication (IPC) enables processes to communicate and synchronize with each other. IPC mechanisms include message passing, semaphores, and shared memory.</p>
+                <a href="#" class="cta-button mt-4">Learn More</a>
+            </div>
+            <!-- System Security -->
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">System Security</h3>
+                <p class="mt-4">System security involves ensuring the confidentiality, integrity, and availability of system resources. It includes access control, encryption, and protection against malicious software.</p>
+                <a href="#" class="cta-button mt-4">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Previous Year Exams Section -->
+    <section id="previous-exams" class="bg-blue-100 text-center py-16">
+        <h2 class="text-3xl font-semibold text-blue-900">Previous Year Exams - Operating Systems</h2>
+        <p class="text-lg mt-4 max-w-3xl mx-auto">Click below to download the previous year's exam papers for **Operating Systems**. These papers will help you prepare for exams and understand the typical format of questions.</p>
+        <div class="grid grid-cols-custom gap-6 mt-12">
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">Previous Year Exam Papers</h3>
+                <p class="mt-4">Download and practice the previous year exam papers related to **Operating Systems**.</p><br>
+                <div>
+                    <a href="./allnotes/Operating_Systems_Notes.pdf" class="cta-button mt-4">Download Papers</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reference Materials Section -->
+    <section id="reference-materials" class="bg-white text-center py-16">
+        <h2 class="text-3xl font-semibold text-blue-900">Reference Materials - Operating Systems</h2>
+        <p class="text-lg mt-4 max-w-3xl mx-auto">Access essential reference materials and notes to understand key topics in **Operating Systems**, such as process management, memory management, and file systems.</p>
+        <div class="grid grid-cols-custom gap-6 mt-12">
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">Operating Systems Notes</h3>
+                <p class="mt-4">Download notes that cover the essential concepts of Operating Systems.</p><br>
+                <div>
+                    <a href="./allnotes/Operating_Systems_Notes.pdf" class="cta-button mt-4">Download Notes</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Follow us on 
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/varungoud___21/" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+        </p>
+        <p>&copy; 2024 Scient E-Library. All rights reserved. | Developed by Varun Goud & Team | Department of CSE (AY 2022-2026).</p>
+    </footer>
+
+    <!-- Popup Modal -->
+    <div class="popup" id="popup-modal">
+        <div class="popup-content">
+            <h3 class="text-2xl font-semibold text-blue-900">Content Not Yet Updated</h3>
+            <p class="mt-4">The content for this section will be uploaded soon. Please check back later!</p>
+            <button onclick="closePopup()" class="mt-4">Close</button>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Show the popup when any link with href="#" is clicked
+        const popupLinks = document.querySelectorAll('a[href="#"]');
+        popupLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();  // Prevent the default behavior of the link
+                document.getElementById('popup-modal').style.display = 'flex';  // Show the popup
+            });
+        });
+
+        // Close the popup
+        function closePopup() {
+            document.getElementById('popup-modal').style.display = 'none';
+        }
+    </script>
+    <script>
+        // Disable Right-Click
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+        });
+    
+        // Disable Double-Click
+        document.addEventListener('dblclick', function(event) {
+            event.preventDefault();
+        });
+    
+        // Disable F12, Ctrl+Shift+I, and Ctrl+U for Inspect Element
+        document.addEventListener('keydown', function(event) {
+            // Check for F12 key or Ctrl+Shift+I or Ctrl+U
+            if ((event.key === 'F12') || 
+                (event.ctrlKey && event.shiftKey && (event.key === 'I')) || 
+                (event.ctrlKey && (event.key === 'U'))) {
+                event.preventDefault();
+            }
+        });
+    </script>
+    
+
+</body>
+
+</html>

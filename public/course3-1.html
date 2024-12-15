@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Course Details - III Year I Semester</title>
+    <link rel="icon" type="image/png" href="logo11.jpg">
+    
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f6f8;
+        }
+
+        header {
+            background-color: #002f6c;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        header p {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        table {
+            width: 80%;
+            margin: 50px auto;
+            border-collapse: collapse;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        table th,
+        table td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        table th {
+            background-color: #002f6c;
+            color: white;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        table tr:hover {
+            background-color: #e2e2e2;
+        }
+
+        table .total-row {
+            background-color: #f2f2f2;
+            font-weight: bold;
+            color: #002f6c;
+        }
+
+        footer {
+            background-color: #004a94;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+        /* Style for links in course names */
+        a {
+            color: #002f6c;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Popup Styling */
+        .popup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .popup-content {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            width: 80%;
+            max-width: 500px;
+        }
+
+        .popup button {
+            background-color: #e53e3e;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .popup button:hover {
+            background-color: #c53030;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Course Details - III Year I Semester</h1>
+        <p>List of courses and their corresponding details for the III Year I Semester</p>
+    </header>
+
+    <!-- Course Table -->
+    <table>
+        <thead>
+            <tr>
+                <th>S.No.</th>
+                <th>Course Code</th>
+                <th>Course Title</th>
+                <th>L</th>
+                <th>T</th>
+                <th>P</th>
+                <th>Credits</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>CS501PC</td>
+                <td><a href="DAA.html">Design and Analysis of Algorithms</a></td>
+                <td>3</td>
+                <td>1</td>
+                <td>0</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>CS502PC</td>
+                <td><a href="cn.html">Computer Networks</a></td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>CS503PC</td>
+                <td><a href="Devops.html">DevOps</a></td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Professional Elective-I</td>
+                <td><a href="pf1.html">Professional Elective-I</a></td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Professional Elective-II</td>
+                <td><a href="pf2.html" >Professional Elective-II</a></td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>CS504PC</td>
+                <td><a href="#course6" onclick="showPopup(event)">Computer Networks Lab</a></td>
+                <td>0</td>
+                <td>0</td>
+                <td>2</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>CS505PC</td>
+                <td><a href="#course7" onclick="showPopup(event)">DevOps Lab</a></td>
+                <td>0</td>
+                <td>0</td>
+                <td>2</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>EN508HS</td>
+                <td><a href="#course8" onclick="showPopup(event)">Advanced English Communication Skills Lab</a></td>
+                <td>0</td>
+                <td>0</td>
+                <td>2</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>CS506PC</td>
+                <td><a href="#course9" onclick="showPopup(event)">UI Design - Flutter</a></td>
+                <td>0</td>
+                <td>0</td>
+                <td>2</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>MC510</td>
+                <td><a href="#course10" onclick="showPopup(event)">Intellectual Property Rights</a></td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr class="total-row">
+                <td>Total</td>
+                <td>-</td>
+                <td>-</td>
+                <td>15</td>
+                <td>1</td>
+                <td>10</td>
+                <td>20</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; © 2024 Scient E-Library. All rights reserved. | Developed by Varun Goud & Team | Department of CSE (AY 2022-2026).</p>
+    </footer>
+
+    <!-- Popup Section -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h2 class="text-2xl font-semibold text-blue-900">Currently Unable to Connect to Server</h2>
+            <p class="mt-4">The content for this course is not available at the moment. Please try again later.</p>
+            <button onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <!-- JavaScript for Popup -->
+    <script>
+        // Show popup when a link with href="#" is clicked
+        function showPopup(event) {
+            event.preventDefault();  // Prevent default action of the link
+            document.getElementById('popup').style.display = 'flex';
+        }
+
+        // Close the popup
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+    </script>
+    <script>
+        // Disable Right-Click
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+        });
+    
+        // Disable Double-Click
+        document.addEventListener('dblclick', function(event) {
+            event.preventDefault();
+        });
+    
+        // Disable F12, Ctrl+Shift+I, and Ctrl+U for Inspect Element
+        document.addEventListener('keydown', function(event) {
+            // Check for F12 key or Ctrl+Shift+I or Ctrl+U
+            if ((event.key === 'F12') || 
+                (event.ctrlKey && event.shiftKey && (event.key === 'I')) || 
+                (event.ctrlKey && (event.key === 'U'))) {
+                event.preventDefault();
+            }
+        });
+    </script>
+    
+</body>
+
+</html>

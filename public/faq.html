@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FAQ | Scient E-Library</title>
+    <link rel="icon" type="image/png" href="logo11.jpg">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        body {
+            background-color: #f9fafb;
+        }
+
+        .cta-button {
+            background-color: #002f6c;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #003366;
+            transform: scale(1.05);
+        }
+
+        .faq-item {
+            background-color: white;
+            padding: 16px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-item:hover {
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .question {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #002f6c;
+        }
+
+        .answer {
+            margin-top: 10px;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .social-media a {
+            margin: 0 5px;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        .fab.fa-facebook {
+            color: #1877f2;
+        }
+
+        .fab.fa-twitter {
+            color: #1da1f2;
+        }
+
+        .fab.fa-instagram {
+            color: #e1306c;
+        }
+
+        .fab.fa-linkedin {
+            color: #0a66c2;
+        }
+
+        .social-media a:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="bg-blue-800 text-white py-4 sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-semibold">Scient E-Library</a>
+            <div class="space-x-6">
+                <a href="index.html" class="hover:text-yellow-400">Home</a>
+                <a href="about.html" class="hover:text-yellow-400">About Us</a>
+                <a href="/register" class="hover:text-yellow-400">Register</a>
+                <a href="login.html" class="hover:text-yellow-400">Login</a>
+                <a href="contact.html" class="hover:text-yellow-400">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- FAQ Section -->
+    <section class="my-12 max-w-7xl mx-auto px-4">
+        <div class="text-center">
+            <h2 class="text-3xl font-semibold text-blue-900">Frequently Asked Questions (FAQ)</h2>
+            <p class="text-lg mt-4 max-w-3xl mx-auto">Here are answers to some of the most common questions we receive about the Scient E-Library and B.Tech JNTUH R22 Regulations. If you have any other questions, feel free to contact us.</p>
+        </div>
+
+        <!-- FAQ Items -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+            <!-- FAQ 1 -->
+            <div class="faq-item">
+                <p class="question">What is Scient E-Library?</p>
+                <p class="answer">Scient E-Library is an online platform offering academic resources such as e-books, research papers, and tutorials to aid students.</p>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="faq-item">
+                <p class="question">How can I access the content?</p>
+                <p class="answer">You need to register and log in to access all the available resources.</p>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="faq-item">
+                <p class="question">Do I need to pay to use the library?</p>
+                <p class="answer">No, the library is free to access once you register and log in.</p>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="faq-item">
+                <p class="question">Can I download books and research papers?</p>
+                <p class="answer">Yes, after logging in, you can download available e-books and research papers.</p>
+            </div>
+
+            <!-- FAQ 5 -->
+            <div class="faq-item">
+                <p class="question">What types of courses are available?</p>
+                <p class="answer">We offer courses in Web Development, Digital Marketing, AI, Data Science, and more.</p>
+            </div>
+
+            <!-- FAQ 6 -->
+            <div class="faq-item">
+                <p class="question">How can I register for the library?</p>
+                <p class="answer">Click on "Register" at the top, fill out the form, and gain access to resources.</p>
+            </div>
+
+            <!-- FAQ 7 -->
+            <div class="faq-item">
+                <p class="question">What are B.Tech JNTUH R22 Regulations?</p>
+                <p class="answer">JNTUH R22 Regulations govern the academic structure, exams, and credit system for B.Tech students.</p>
+            </div>
+
+            <!-- FAQ 8 -->
+            <div class="faq-item">
+                <p class="question">How are exams structured under JNTUH R22 Regulations?</p>
+                <p class="answer">Exams include internal assessments and external exams, with CGPA for grading.</p>
+            </div>
+
+            <!-- FAQ 9 -->
+            <div class="faq-item">
+                <p class="question">Are internships mandatory under JNTUH R22 Regulations?</p>
+                <p class="answer">Yes, internships are mandatory after the third year to gain practical experience.</p>
+            </div>
+
+            <!-- FAQ 10 -->
+            <div class="faq-item">
+                <p class="question">What is the credit system in B.Tech JNTUH R22?</p>
+                <p class="answer">The system assigns credits to each subject, and your CGPA is calculated based on them.</p>
+            </div>
+        </div>
+        <!-- FAQ 11 -->
+         <div class="faq-item">
+        <p class="question">What courses are in JNTUH R22?</p>
+        <p class="answer">Computer Science Engineering, Electrical and Electronics Engineering, Electronics and Communication Engineering, Civil Engineering, Mechanical Engineering, Information Technology, Biotechnology, and more.</p>
+         </div>
+
+
+        <!-- CTA Button for Registration -->
+        <div class="text-center mt-12">
+            <a href="/register" class="cta-button inline-block">Register Now</a>
+        </div>
+    </section>
+    
+
+    <footer class="bg-gray-900 text-white py-12 mt-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12">
+                <!-- About Us Section -->
+                <div>
+                    <h5 class="text-xl font-semibold mb-4">ABOUT US</h5>
+                    <ul>
+                        <li><a href="about.html" class="text-sm hover:text-yellow-400">About Scient E-Library</a></li>
+                        <li><a href="vision-mission.html" class="text-sm hover:text-yellow-400">Vision & Mission</a></li>
+                        <li><a href="team.html" class="text-sm hover:text-yellow-400">Our Team</a></li>
+                        <li><a href="contact.html" class="text-sm hover:text-yellow-400">Contact Us</a></li>
+                        <li><a href="faq.html" class="text-sm hover:text-yellow-400">FAQ</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Courses & Resources Section -->
+                <div>
+                    <h5 class="text-xl font-semibold mb-4">COURSES & RESOURCES</h5>
+                    <ul>
+                        <li><a href="#" class="text-sm hover:text-yellow-400" onclick="showAlertAndRedirect()">Browse Courses</a></li>
+                        <li><a href="#" class="text-sm hover:text-yellow-400" onclick="showAlertAndRedirect()">E-Books Library</a></li>
+                        <li><a href="#" class="text-sm hover:text-yellow-400" onclick="showAlertAndRedirect()">Tutorials</a></li>
+                        <li><a href="#" class="text-sm hover:text-yellow-400" onclick="showAlertAndRedirect()">Research Papers</a></li>
+                        <li><a href="#" class="text-sm hover:text-yellow-400" onclick="showAlertAndRedirect()">Webinars</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Quick Links Section -->
+                <div>
+                    <h5 class="text-xl font-semibold mb-4">QUICK LINKS</h5>
+                    <ul>
+                        <li><a href="register.html" class="text-sm hover:text-yellow-400">Register</a></li>
+                        <li><a href="login.html" class="text-sm hover:text-yellow-400">Login</a></li>
+                        <li><a href="terms.html" class="text-sm hover:text-yellow-400">Terms of Use</a></li>
+                        <li><a href="privacy.html" class="text-sm hover:text-yellow-400">Privacy Policy</a></li>
+                        <li><a href="contact.html" class="text-sm hover:text-yellow-400">Contact Us</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Social Media Section -->
+                <div>
+                    <h5 class="text-xl font-semibold mb-4">FOLLOW US ON</h5>
+                    <div class="social-media">
+                        <a href="https://www.facebook.com" target="_blank">
+                          <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.twitter.com" target="_blank">
+                          <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/varungoud___21/" target="_blank">
+                          <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com" target="_blank">
+                          <i class="fab fa-linkedin"></i>
+                        </a>
+                      </div>
+                </div>
+            </div>
+    
+            <!-- Footer Bottom Section -->
+            <div class="text-center mt-12 border-t border-gray-700 pt-6">
+                <p class="text-sm">© 2024 Scient E-Library. All rights reserved. | Developed by Varun Goud & Team | Department of CSE (AY 2022-2026)</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        function showAlertAndRedirect() {
+            alert("Kindly Register & Access the content with login details. No content is shared without login details.");
+            window.location.href = "register.html"; // Redirect to register page
+        }
+    </script>
+    <script>
+        // Disable Right-Click
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+        });
+    
+        // Disable Double-Click
+        document.addEventListener('dblclick', function(event) {
+            event.preventDefault();
+        });
+    
+        // Disable F12, Ctrl+Shift+I, and Ctrl+U for Inspect Element
+        document.addEventListener('keydown', function(event) {
+            // Check for F12 key or Ctrl+Shift+I or Ctrl+U
+            if ((event.key === 'F12') || 
+                (event.ctrlKey && event.shiftKey && (event.key === 'I')) || 
+                (event.ctrlKey && (event.key === 'U'))) {
+                event.preventDefault();
+            }
+        });
+    </script>
+    
+</body>
+
+</html>

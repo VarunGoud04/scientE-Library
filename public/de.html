@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Digital Electronics | Scient E-Library</title>
+    <link rel="icon" type="image/png" href="logo11.jpg">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <style>
+        .cta-button {
+            background-color: #002f6c;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #003366;
+            transform: scale(1.05);
+        }
+
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+            z-index: 50;
+        }
+
+        .modal-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            width: 60%;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .close-button {
+            background-color: #002f6c;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .close-button:hover {
+            background-color: #003366;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-blue-800 text-white py-4 sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-semibold">Scient E-Library</a>
+            <div class="space-x-6 navbar">
+                <a href="#course-details" class="hover:text-yellow-400" data-href="#">Course Details</a>
+                <a href="#important-topics" class="hover:text-yellow-400" data-href="#">Important Topics</a>
+                <a href="#resources" class="hover:text-yellow-400" data-href="#">Resources</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="bg-blue-900 text-white text-center py-20">
+        <h1 class="text-5xl font-extrabold">Digital Electronics</h1>
+        <p class="text-xl mt-4 max-w-3xl mx-auto">Explore the world of Digital Electronics, a core subject for understanding digital systems and their applications in modern technology. Learn about logic gates, flip-flops, counters, and more!</p>
+        <a href="#course-details" class="cta-button mt-8 inline-block" data-href="#">Learn More</a>
+    </section>
+
+    <!-- Course Details Section -->
+    <section id="course-details" class="bg-gray-50 text-center py-16">
+        <h2 class="text-3xl font-semibold text-blue-900">Course Details</h2>
+        <p class="text-lg mt-4 max-w-3xl mx-auto">Digital Electronics introduces the basics of digital circuits, Boolean algebra, and the application of logic gates in circuit design. Key topics include binary arithmetic, multiplexers, and memory elements.</p>
+        
+        <div class="max-w-7xl mx-auto mt-12">
+            <table class="table-auto w-full border-collapse border border-gray-200">
+                <thead>
+                    <tr>
+                        <th class="border px-4 py-2 text-left bg-blue-800 text-white">Topic</th>
+                        <th class="border px-4 py-2 text-left bg-blue-800 text-white">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-b">
+                        <td class="px-4 py-2">Logic Gates</td>
+                        <td class="px-4 py-2">The fundamental building blocks of digital circuits. Includes AND, OR, NOT, NAND, NOR, XOR, and XNOR gates.</td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="px-4 py-2">Boolean Algebra</td>
+                        <td class="px-4 py-2">Mathematical framework used to simplify and analyze digital circuits.</td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="px-4 py-2">Flip-Flops and Latches</td>
+                        <td class="px-4 py-2">Basic memory elements in digital systems used to store binary information.</td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="px-4 py-2">Counters</td>
+                        <td class="px-4 py-2">Sequential circuits that count in binary, frequently used in digital clocks and timers.</td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="px-4 py-2">Multiplexers and Demultiplexers</td>
+                        <td class="px-4 py-2">Devices used to combine and split data lines based on selection inputs.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Important Topics Section -->
+    <section id="important-topics" class="bg-white text-center py-16">
+        <h2 class="text-3xl font-semibold text-blue-900">Important Topics</h2>
+        <p class="text-lg mt-4 max-w-3xl mx-auto">Here are some key topics that are crucial for mastering Digital Electronics. These topics cover fundamental and advanced concepts that will help you in your exams and practical work.</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">Binary Number System</h3>
+                <ul class="mt-4 text-left">
+                    <li>Representation of binary numbers</li>
+                    <li>Conversion between number systems (Binary, Decimal, Hexadecimal)</li>
+                    <li>Arithmetic operations in binary (addition, subtraction, etc.)</li>
+                </ul>
+            </div>
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">Combinational Logic Circuits</h3>
+                <ul class="mt-4 text-left">
+                    <li>Design of adders, subtractors, multiplexers, demultiplexers</li>
+                    <li>Simplification using Boolean algebra</li>
+                    <li>Implementation with logic gates</li>
+                </ul>
+            </div>
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">Sequential Logic Circuits</h3>
+                <ul class="mt-4 text-left">
+                    <li>Flip-flops: SR, JK, D, T</li>
+                    <li>Registers and counters</li>
+                    <li>State diagrams and state tables</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="bg-gray-50 text-center py-16">
+        <h2 class="text-3xl font-semibold text-blue-900">Resources</h2>
+        <p class="text-lg mt-4 max-w-3xl mx-auto">Access study materials, tutorials, and practice papers to enhance your understanding of Digital Electronics. These resources will help you prepare for exams and gain a practical understanding of digital circuits.</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">Study Notes</h3>
+                <p class="mt-4">Comprehensive notes on all the topics in Digital Electronics. These notes simplify complex concepts for easier understanding.</p>
+                <a href="#" class="cta-button mt-4 inline-block" data-href="#">Download Notes</a>
+            </div>
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">Video Tutorials</h3>
+                <p class="mt-4">Watch step-by-step video tutorials on Digital Electronics to visually learn how to build and analyze circuits.</p>
+                <a href="#" class="cta-button mt-4 inline-block" data-href="#">Watch Now</a>
+            </div>
+            <div class="card p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-900">Practice Papers</h3>
+                <p class="mt-4">Download past year question papers and practice sets to prepare for your Digital Electronics exams.</p>
+                <a href="#" class="cta-button mt-4 inline-block" data-href="#">Download Papers</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white text-center py-4">
+        <p>&copy; 2024 Scient E-Library. All rights reserved. | Developed by Varun Goud & Team | Department of CSE (AY 2022-2026)</p>
+    </footer>
+
+    <!-- Modal Popup -->
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <h2 class="text-2xl font-semibold text-blue-900">Under Maintenance</h2>
+            <p class="mt-4">This resource is currently under maintenance. Please check back later.</p>
+            <button class="close-button mt-8" id="closeModal">Close</button>
+        </div>
+    </div>
+
+    <script>
+        // Get all the links with data-href attribute
+        const links = document.querySelectorAll('a[data-href]');
+
+        // Get modal and close button
+        const modal = document.getElementById("myModal");
+        const closeModalButton = document.getElementById("closeModal");
+
+        // Show the modal when any of the links are clicked
+        links.forEach(link => {
+            link.addEventListener("click", function(event) {
+                event.preventDefault(); // Prevent the default behavior (navigation)
+                modal.style.display = "flex"; // Show the modal
+            });
+        });
+
+        // Close the modal
+        closeModalButton.addEventListener("click", function() {
+            modal.style.display = "none"; // Hide the modal
+        });
+
+        // Close the modal if clicked outside the modal content
+        window.addEventListener("click", function(event) {
+            if (event.target === modal) {
+                modal.style.display = "none"; // Hide the modal
+            }
+        });
+    </script>
+    <script>
+        // Disable Right-Click
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+        });
+    
+        // Disable Double-Click
+        document.addEventListener('dblclick', function(event) {
+            event.preventDefault();
+        });
+    
+        // Disable F12, Ctrl+Shift+I, and Ctrl+U for Inspect Element
+        document.addEventListener('keydown', function(event) {
+            // Check for F12 key or Ctrl+Shift+I or Ctrl+U
+            if ((event.key === 'F12') || 
+                (event.ctrlKey && event.shiftKey && (event.key === 'I')) || 
+                (event.ctrlKey && (event.key === 'U'))) {
+                event.preventDefault();
+            }
+        });
+    </script>
+    
+
+</body>
+
+</html>
